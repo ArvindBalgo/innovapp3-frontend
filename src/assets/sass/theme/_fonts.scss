@@ -1,0 +1,25 @@
+/*
+Meant for font-face declaration
+*/
+
+@font-face {
+  font-family: 'nunito';
+  src: url('../../fonts/NunitoSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nunito medium';
+  src: url('../../fonts/NunitoSans-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nunito bold';
+  src: url('../../fonts/NunitoSans-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

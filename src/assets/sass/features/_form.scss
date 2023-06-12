@@ -1,0 +1,32 @@
+.form-wrapper {
+  border-radius: 4px;
+  box-shadow: $primary-box-shadow;
+  padding: 25px 50px;
+
+  &__title {
+    font-family: $font-primary-bold !important;
+    font-size: $font-size-lg !important;
+    text-align: center;
+    margin-bottom: 25px !important;
+  }
+
+  &__error {
+    color: red;
+  }
+
+  &__cta {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    color: $primary-color;
+    font-family: $font-primary-medium;
+    font-size: $font-size-sm;
+
+    &:active {
+      color: $primary-color;
+    }
+  }
+
+}

@@ -1,0 +1,789 @@
+{
+  "airports": [
+    {
+      "country": "Maurice",
+      "region": "Grand Port",
+      "city": "Plaine Magnien",
+      "airportCode": "MRU"
+    },
+    {
+      "country": "France",
+      "region": "Paris",
+      "city": "Charles de Gaulle",
+      "airportCode": "CDG"
+    },
+    {
+      "country": "France",
+      "region": "Paris",
+      "city": "Orly",
+      "airportCode": "ORY"
+    },
+    {
+      "country": "France",
+      "region": "La Réunion",
+      "city": "Saint Denis",
+      "airportCode": "RUN"
+    },
+    {
+      "country": "France",
+      "region": "La Réunion",
+      "city": "Saint Pierre",
+      "airportCode": "ZSE"
+    },
+    {
+      "country": "Madagascar",
+      "region": "",
+      "city": "Ivato",
+      "airportCode": "TNR"
+    },
+    {
+      "country": "Angleterre",
+      "region": "Londres",
+      "city": "Heathrow",
+      "airportCode": "LHR"
+    },
+    {
+      "country": "Seychelles",
+      "region": "Region A",
+      "city": "Victoria",
+      "airportCode": "SEZ"
+    },
+    {
+      "country": "Rodrigues",
+      "region": "Rodrigues",
+      "city": "Plaine Corail",
+      "airportCode": "RRG"
+    },
+    {
+      "country": "Singapore",
+      "region": "",
+      "city": "Changi",
+      "airportCode": "SIN"
+    }
+  ],
+  "flights": [
+    {
+      "0": {
+        "CabinClass": "First",
+        "SeatsAvailable": "5",
+        "self-closing": "true"
+      },
+      "1": {
+        "CabinClass": "PremiumEconomy",
+        "SeatsAvailable": "39",
+        "self-closing": "true"
+      },
+      "2": {
+        "CabinClass": "Economy",
+        "SeatsAvailable": "53",
+        "self-closing": "true"
+      },
+      "id": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "Carrier": "MRV",
+      "FlightNumber": "1234",
+      "Origin": "MRU",
+      "Destination": "CDG",
+      "DepartureTime": "2022-05-01T12:08:00.000+04:00",
+      "ArrivalTime": "2022-05-01T23:26:00.000+02:00",
+      "BookingInfo": [
+        {
+          "CabinClass": "First",
+          "SeatsAvailable": "3",
+          "self-closing": "true"
+        },
+        {
+          "CabinClass": "PremiumEconomy",
+          "SeatsAvailable": "37",
+          "self-closing": "true"
+        },
+        {
+          "CabinClass": "Economy",
+          "SeatsAvailable": "51",
+          "self-closing": "true"
+        }
+      ]
+    },
+    {
+      "id": "sQTWMC3DPLdelksllDLdd==",
+      "Carrier": "MRV",
+      "FlightNumber": "4231",
+      "Origin": "CDG",
+      "Destination": "MRU",
+      "DepartureTime": "2022-05-01T10:05:00.000+02:00",
+      "ArrivalTime": "2022-05-01T22:26:00.000+04:00",
+      "BookingInfo": [
+        {
+          "CabinClass": "First",
+          "SeatsAvailable": "1",
+          "self-closing": "true"
+        },
+        {
+          "CabinClass": "PremiumEconomy",
+          "SeatsAvailable": "54",
+          "self-closing": "true"
+        },
+        {
+          "CabinClass": "Economy",
+          "SeatsAvailable": "29",
+          "self-closing": "true"
+        }
+      ]
+    },
+    {
+      "id": "ACMkFvAAWT2A=sQBz=KAACR3",
+      "Carrier": "MRV",
+      "FlightNumber": "5241",
+      "Origin": "MRU",
+      "Destination": "RRG",
+      "DepartureTime": "2022-05-01T09:01:00.000+04:00",
+      "ArrivalTime": "2022-05-01T11:00:00.000+04:00",
+      "BookingInfo": [
+        {
+          "CabinClass": "Economy",
+          "SeatsAvailable": "29",
+          "self-closing": "true"
+        }
+      ]
+    },
+    {
+      "id": "FszvWQCT3kAAAAR=K2ABM=CA",
+      "Carrier": "MRV",
+      "FlightNumber": "8910",
+      "Origin": "RRG",
+      "Destination": "MRU",
+      "DepartureTime": "2022-05-02T08:08:00.000+04:00",
+      "ArrivalTime": "2022-05-02T10:26:00.000+04:00",
+      "BookingInfo": {
+        "CabinClass": "Economy",
+        "SeatsAvailable": "50",
+        "self-closing": "true"
+      }
+    },
+    {
+      "id": "zCAsABAKWC=T3vA2M=FAARQk",
+      "Carrier": "MRV",
+      "FlightNumber": "1245",
+      "Origin": "ZSE",
+      "Destination": "MRU",
+      "DepartureTime": "2022-05-03T08:08:00.000+04:00",
+      "ArrivalTime": "2022-05-03T09:09:00.000+04:00",
+      "BookingInfo": {
+        "CabinClass": "Economy",
+        "SeatsAvailable": "60",
+        "self-closing": "true"
+      }
+    },
+    {
+      "id": "BTkzMRv2AA=KsQA3CWCAFA=A",
+      "Carrier": "MRV",
+      "FlightNumber": "1246",
+      "Origin": "RUN",
+      "Destination": "MRU",
+      "DepartureTime": "2022-05-03T09:08:00.000+04:00",
+      "ArrivalTime": "2022-05-03T10:09:00.000+04:00",
+      "BookingInfo": {
+        "CabinClass": "Economy",
+        "SeatsAvailable": "70",
+        "self-closing": "true"
+      }
+    },
+    {
+      "id": "ABzsR3A=WCAkM2AQvAAKFCT=",
+      "Carrier": "MRV",
+      "FlightNumber": "7895",
+      "Origin": "SIN",
+      "Destination": "MRU",
+      "DepartureTime": "2022-05-05T09:08:00.000+08:00",
+      "ArrivalTime": "2022-05-05T23:09:00.000+04:00",
+      "BookingInfo": [
+        {
+          "CabinClass": "First",
+          "SeatsAvailable": "35",
+          "self-closing": "true"
+        },
+        {
+          "CabinClass": "PremiumEconomy",
+          "SeatsAvailable": "45",
+          "self-closing": "true"
+        },
+        {
+          "CabinClass": "Economy",
+          "SeatsAvailable": "41",
+          "self-closing": "true"
+        }
+      ]
+    },
+    {
+      "id": "AAARFkBCsQMz=2vCWAKTA=A3",
+      "Carrier": "MRV",
+      "FlightNumber": "7858",
+      "Origin": "SIN",
+      "Destination": "CDG",
+      "DepartureTime": "2022-05-05T10:08:00.000+08:00",
+      "ArrivalTime": "2022-05-06T08:09:00.000+02:00",
+      "BookingInfo": [
+        {
+          "CabinClass": "First",
+          "SeatsAvailable": "19",
+          "self-closing": "true"
+        },
+        {
+          "CabinClass": "PremiumEconomy",
+          "SeatsAvailable": "51",
+          "self-closing": "true"
+        },
+        {
+          "CabinClass": "Economy",
+          "SeatsAvailable": "38",
+          "self-closing": "true"
+        }
+      ]
+    },
+    {
+      "id": "=CvATzKkACFRMQ23sWAABAA=",
+      "Carrier": "MRV",
+      "FlightNumber": "5879",
+      "Origin": "TNR",
+      "Destination": "MRU",
+      "DepartureTime": "2022-05-07T12:08:00.000+03:00",
+      "ArrivalTime": "2022-05-06T16:09:00.000+04:00",
+      "BookingInfo": [
+        {
+          "CabinClass": "First",
+          "SeatsAvailable": "21",
+          "self-closing": "true"
+        },
+        {
+          "CabinClass": "PremiumEconomy",
+          "SeatsAvailable": "63",
+          "self-closing": "true"
+        },
+        {
+          "CabinClass": "Economy",
+          "SeatsAvailable": "41",
+          "self-closing": "true"
+        }
+      ]
+    },
+    {
+      "id": "=CvATzKkACFRMQ23sWAABAA=",
+      "Carrier": "MRV",
+      "FlightNumber": "5878",
+      "Origin": "MRU",
+      "Destination": "TNR",
+      "DepartureTime": "2022-05-07T12:08:00.000+04:00",
+      "ArrivalTime": "2022-05-06T14:09:00.000+03:00",
+      "BookingInfo": [
+        {
+          "CabinClass": "First",
+          "SeatsAvailable": "15",
+          "self-closing": "true"
+        },
+        {
+          "CabinClass": "PremiumEconomy",
+          "SeatsAvailable": "65",
+          "self-closing": "true"
+        },
+        {
+          "CabinClass": "Economy",
+          "SeatsAvailable": "42",
+          "self-closing": "true"
+        }
+      ]
+    }
+  ],
+  "reservations": [
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 3,
+      "firstName": "ccc",
+      "lastName": "ccc",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": false,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": "",
+        "First": ""
+      },
+      "id": 1
+    },
+    {
+      "flightId": "sQTWMC3DPLdelksllDLdd==",
+      "flightNumber": "4231",
+      "flightOrigin": "CDG",
+      "flightDestination": "MRU",
+      "userId": 3,
+      "firstName": "ccc",
+      "lastName": "ccc",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": true,
+      "isPresentFirst": true,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": 1,
+        "First": 1
+      },
+      "id": 2
+    },
+    {
+      "flightId": "ACMkFvAAWT2A=sQBz=KAACR3",
+      "flightNumber": "5241",
+      "flightOrigin": "MRU",
+      "flightDestination": "RRG",
+      "userId": 3,
+      "firstName": "ccc",
+      "lastName": "ccc",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": "",
+      "isPresentFirst": "",
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": "",
+        "First": ""
+      },
+      "id": 3
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 2,
+      "firstName": "prakash",
+      "lastName": "prakash",
+      "email": "prakash@gmail.com",
+      "phone": "57885858",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": true,
+      "isPresentFirst": true,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": 10,
+        "First": 5
+      },
+      "id": 4
+    },
+    {
+      "flightId": "ABzsR3A=WCAkM2AQvAAKFCT=",
+      "flightNumber": "7895",
+      "flightOrigin": "SIN",
+      "flightDestination": "MRU",
+      "userId": 2,
+      "firstName": "prakash",
+      "lastName": "prakash",
+      "email": "prakash@gmail.com",
+      "phone": "57885858",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": false,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": "",
+        "First": ""
+      },
+      "id": 5
+    },
+    {
+      "flightId": "=CvATzKkACFRMQ23sWAABAA=",
+      "flightNumber": "5879",
+      "flightOrigin": "TNR",
+      "flightDestination": "MRU",
+      "userId": 2,
+      "firstName": "prakash",
+      "lastName": "prakash",
+      "email": "prakash@gmail.com",
+      "phone": "57885858",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": true,
+      "isPresentFirst": true,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": 2,
+        "First": 2
+      },
+      "id": 6
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 4,
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": true,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": null,
+        "PremiumEconomy": 1,
+        "First": ""
+      },
+      "id": 7
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 4,
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": false,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": "",
+        "First": ""
+      },
+      "id": 8
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 4,
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": false,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": "",
+        "First": ""
+      },
+      "id": 9
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 4,
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": false,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": "",
+        "First": ""
+      },
+      "id": 10
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 4,
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": true,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": 2,
+        "PremiumEconomy": 2,
+        "First": ""
+      },
+      "id": 11
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 4,
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": true,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": 2,
+        "First": ""
+      },
+      "id": 12
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 4,
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": false,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": "",
+        "First": ""
+      },
+      "id": 13
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 4,
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": false,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": 5,
+        "PremiumEconomy": "",
+        "First": ""
+      },
+      "id": 14
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 4,
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": false,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": "",
+        "First": ""
+      },
+      "id": 15
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 4,
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": false,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": "",
+        "First": ""
+      },
+      "id": 16
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 4,
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": false,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": "",
+        "First": ""
+      },
+      "id": 17
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 4,
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": false,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": "",
+        "First": ""
+      },
+      "id": 18
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 4,
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": true,
+      "isPresentFirst": true,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": 2,
+        "First": 2
+      },
+      "id": 19
+    },
+    {
+      "flightId": "AAARFkBCsQMz=2vCWAKTA=A3",
+      "flightNumber": "7858",
+      "flightOrigin": "SIN",
+      "flightDestination": "CDG",
+      "userId": 5,
+      "firstName": "John",
+      "lastName": "smith",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": true,
+      "isPresentFirst": true,
+      "seatType": {
+        "Economy": 2,
+        "PremiumEconomy": 2,
+        "First": 2
+      },
+      "id": 20
+    },
+    {
+      "flightId": "AAARFkBCsQMz=2vCWAKTA=A3",
+      "flightNumber": "7858",
+      "flightOrigin": "SIN",
+      "flightDestination": "CDG",
+      "userId": 5,
+      "firstName": "John",
+      "lastName": "smith",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": true,
+      "isPresentFirst": true,
+      "seatType": {
+        "Economy": 2,
+        "PremiumEconomy": 2,
+        "First": 2
+      },
+      "id": 21
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 4,
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": false,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": "",
+        "First": ""
+      },
+      "id": 22
+    },
+    {
+      "flightId": "sQTWMC3R2BKAzkvFCAAAAA==",
+      "flightNumber": "1234",
+      "flightOrigin": "MRU",
+      "flightDestination": "CDG",
+      "userId": 4,
+      "firstName": "admin",
+      "lastName": "admin",
+      "email": "prakashbhunjun@yahoo.com",
+      "phone": "57828435",
+      "isPresentEconomy": true,
+      "isPresentPremiumEconomy": false,
+      "isPresentFirst": false,
+      "seatType": {
+        "Economy": 1,
+        "PremiumEconomy": "",
+        "First": ""
+      },
+      "id": 23
+    }
+  ],
+  "signupUsers": [
+    {
+      "firstName": "rishi",
+      "lastName": "rishi",
+      "userName": "rishi",
+      "password": "rishi",
+      "email": "rishi@gmail.com",
+      "phone": "51234567",
+      "userType": "Client",
+      "id": 1
+    },
+    {
+      "firstName": "poove",
+      "lastName": "poove",
+      "userName": "poove",
+      "password": "poove",
+      "email": "poove@gmail.com",
+      "phone": "51234567",
+      "userType": "Merchant",
+      "id": 2
+    },
+    {
+      "firstName": "admin",
+      "lastName": "admin",
+      "userName": "admin",
+      "password": "admin",
+      "email": "admin@gmail.com",
+      "phone": "51234567",
+      "userType": "Merchant",
+      "id": 3
+    }
+  ]
+}
