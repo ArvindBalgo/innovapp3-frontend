@@ -1,0 +1,131 @@
+<div class="form-wrapper" novalidate>
+
+  <h2 class="form-wrapper__title">Create an account.</h2>
+
+  <form [formGroup]="signUpForm">
+
+    <div class="input-wrapper input-wrapper--fluid">
+      <mat-label class="primary-text-color d-block mb-10">
+        Select type
+      </mat-label>
+      <mat-radio-group (change)="onSelectUserType($event)">
+        <mat-radio-button checked [value]="false">
+            <span> Client </span>
+        </mat-radio-button>
+        <mat-radio-button [value]="true">
+            <span> Merchant </span>
+        </mat-radio-button>
+      </mat-radio-group>
+
+    </div>
+
+    <div class="input-group">
+      <div class="input-wrapper mr-25">
+
+        <mat-form-field appearance="fill"
+                        [ngClass]="{'input-error': (isSubmitted && signUpForm.get('firstName')?.invalid)}">
+          <mat-label>First Name</mat-label>
+          <input matInput formControlName="firstName" type="text"/>
+        </mat-form-field>
+
+        <span class="error"
+              *ngIf="isSubmitted && signUpForm.get('firstName')?.value !== '' && signUpForm.get('firstName')?.invalid">
+                  First name must contain only letters
+              </span>
+        <span class="error" *ngIf="isSubmitted && signUpForm.get('firstName')?.value === ''">
+                  Field required
+              </span>
+
+      </div>
+      <div class="input-wrapper ml-25">
+        <mat-form-field appearance="fill"
+                        [ngClass]="{'input-error': (isSubmitted && signUpForm.get('lastName')?.invalid)}">
+          <mat-label>Last Name</mat-label>
+          <input matInput formControlName="lastName" type="text"/>
+        </mat-form-field>
+
+        <span class="error"
+              *ngIf="isSubmitted && signUpForm.get('lastName')?.value !== '' && signUpForm.get('lastName')?.invalid">
+                    Last name must contain only letters
+                </span>
+        <span class="error" *ngIf="isSubmitted && signUpForm.get('lastName')?.value === ''">
+                    Field required
+                </span>
+      </div>
+    </div>
+
+    <div class="input-group">
+
+      <div class="input-wrapper mr-25">
+
+        <mat-form-field appearance="fill"
+                        [ngClass]="{'input-error': (isSubmitted && signUpForm.get('userName')?.invalid)}">
+          <mat-label>User Name</mat-label>
+          <input matInput formControlName="userName" type="text"/>
+        </mat-form-field>
+
+        <span class="error" *ngIf="isSubmitted && signUpForm.get('userName')?.value === ''">
+                  Field required
+              </span>
+
+      </div>
+
+      <div class="input-wrapper ml-25">
+        <mat-form-field appearance="fill"
+                        [ngClass]="{'input-error': (isSubmitted && signUpForm.get('password')?.invalid)}">
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="password" type="password"/>
+        </mat-form-field>
+
+        <span class="error"
+              *ngIf="isSubmitted && signUpForm.get('password')?.value !== '' && signUpForm.get('password')?.invalid">
+                Password must contain more than 6 characters
+            </span>
+        <span class="error" *ngIf="isSubmitted && signUpForm.get('password')?.value === ''">
+                Field required
+            </span>
+      </div>
+
+    </div>
+
+    <div class="input-wrapper input-wrapper--fluid">
+      <mat-form-field appearance="fill" [ngClass]="{'input-error': (isSubmitted && signUpForm.get('email')?.invalid)}">
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email" type="email"/>
+      </mat-form-field>
+
+      <span class="error"
+            *ngIf="isSubmitted && signUpForm.get('email')?.value !== '' && signUpForm.get('email')?.invalid">
+                Please enter a valid email address
+            </span>
+      <span class="error" *ngIf="isSubmitted && signUpForm.get('email')?.value === ''">
+                Field required
+            </span>
+    </div>
+
+    <div class="input-wrapper input-wrapper--fluid">
+      <mat-form-field appearance="fill" [ngClass]="{'input-error': (isSubmitted && signUpForm.get('phone')?.invalid)}">
+        <mat-label>Phone</mat-label>
+        <input matInput formControlName="phone" type="tel"/>
+      </mat-form-field>
+
+      <span class="error"
+            *ngIf="isSubmitted && signUpForm.get('phone')?.value !== '' && signUpForm.get('phone')?.invalid">
+                Please enter a valid phone number
+            </span>
+      <span class="error" *ngIf="isSubmitted && signUpForm.get('phone')?.value === ''">
+                Field required
+            </span>
+    </div>
+
+    <div class="form-wrapper__cta">
+      <button type="button" class="btn btn--primary"
+              (click)="onCreate()">
+        Create
+      </button>
+    </div>
+
+    <a class="form-wrapper__link" href="" routerLink="/account/login">Already Registered? Click to login!!</a>
+  </form>
+
+</div>

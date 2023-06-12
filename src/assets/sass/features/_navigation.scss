@@ -1,0 +1,111 @@
+.navigation {
+  top: 0px;
+  left: 0px;
+  width: 400px;
+  height: 100%;
+  position: fixed;
+  background-color: #272932;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .logo {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  ul {
+    margin-top: 75px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    .nav-btn {
+      font-family: $font-primary-regular;
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      width: 300px;
+      padding: 15px 30px 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      text-decoration: none;
+      position: relative;
+      border-radius: 50px;
+
+      i {
+        margin-right: 25px;
+      }
+
+    }
+
+    &__active {
+      background-color: rgba(0,0,0,0.4);
+    }
+  }
+
+  .profile-container {
+    margin-top: 100px;
+    padding: 20px;
+    color: #ffffff;
+    font-family: $font-primary-regular;
+
+    .profile-text {
+      font-size: 14px;
+      font-weight: 400;
+    }
+
+    .image-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .profile-info {
+        p {
+          font-size: 18px;
+
+          &:first-child {
+            text-transform: uppercase;
+            font-weight: 700;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+  }
+
+  .logout-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    button {
+      color: white;
+      font-family: $font-primary-regular;
+      font-size: 18px;
+      font-weight: 600;
+      background-color: rgba(0,0,0,0.1);
+      padding: 15px 30px 15px 30px;
+      display: flex;
+      width: 300px;
+      border-radius: 50px;
+
+      i {
+        margin-right: 25px;
+      }
+
+    }
+  }
+}

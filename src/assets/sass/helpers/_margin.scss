@@ -1,0 +1,21 @@
+$margins: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 100; // insert value to create margin-[top, right, bottom, left] HERE
+
+@each $margin in $margins {
+  .m-#{$margin} {
+    margin: #{$margin}px !important;
+  }
+  .mt-#{$margin} {
+    margin-top: #{$margin}px !important;
+  }
+  .mb-#{$margin} {
+    margin-bottom: #{$margin}px !important;
+  }
+  .ml-#{$margin} {
+    margin-left: #{$margin}px !important;
+  }
+  .mr-#{$margin} {
+    margin-right: #{$margin}px !important;
+  }
+}
+
+/*Output will be: Ex mt-5, mr-5, ml-5, mb-5*/

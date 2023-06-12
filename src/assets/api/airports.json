@@ -1,0 +1,64 @@
+{
+  "airports": [
+      {
+        "country": "Maurice",
+        "region": "Grand Port",
+        "city": "Plaine Magnien",
+        "airportCode": "MRU"
+      },
+      {
+        "country": "France",
+        "region": "Paris",
+        "city": "Charles de Gaulle",
+        "airportCode": "CDG"
+      },
+      {
+        "country": "France",
+        "region": "Paris",
+        "city": "Orly",
+        "airportCode": "ORY"
+      },
+      {
+        "country": "France",
+        "region": "La Réunion",
+        "city": "Saint Denis",
+        "airportCode": "RUN"
+      },
+      {
+        "country": "France",
+        "region": "La Réunion",
+        "city": "Saint Pierre",
+        "airportCode": "ZSE"
+      },
+      {
+        "country": "Madagascar",
+        "region": "",
+        "city": "Ivato",
+        "airportCode": "TNR"
+      },
+      {
+        "country": "Angleterre",
+        "region": "Londres",
+        "city": "Heathrow",
+        "airportCode": "LHR"
+      },
+      {
+        "country": "Seychelles",
+        "region": "Region A",
+        "city": "Victoria",
+        "airportCode": "SEZ"
+      },
+      {
+        "country": "Maurice",
+        "region": "Rodrigues",
+        "city": "Plaine Corail",
+        "airportCode": "RRG"
+      },
+      {
+        "country": "Singapore",
+        "region": "",
+        "city": "Changi",
+        "airportCode": "SIN"
+      }
+  ]
+}
