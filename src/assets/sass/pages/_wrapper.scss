@@ -1,9 +1,16 @@
-.wrapper {
+.wrapperLogin {
   max-width: 800px;
   margin: 0 auto;
   margin-top: 50px;
 }
 
-body {
-  background-color: rgba(161, 191, 217, 0.2);
+.wrapper {
+  width: calc(100% - 320px);
+  margin: 100px auto 0 320px;
+  background-color: #F6F6F6;
+  min-height: calc(100vh - 100px);
+
+  .inner-wrapper {
+    padding: 45px 75px 0 75px;
+  }
 }

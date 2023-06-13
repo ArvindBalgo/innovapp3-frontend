@@ -18,7 +18,7 @@ export class MerchantsComponent implements OnInit {
   ngOnInit(): void {
     this._httpClient.get('/api/merchants').subscribe((response: any) => {
       this.merchants = response;
-      console.log('this.merchants', this.merchants);
+      // console.log('this.merchants', this.merchants);
     })
   }
 

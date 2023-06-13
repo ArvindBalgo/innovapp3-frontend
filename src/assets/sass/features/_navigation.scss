@@ -1,64 +1,83 @@
 .navigation {
   top: 0px;
   left: 0px;
-  width: 400px;
+  width: 320px;
   height: 100%;
   position: fixed;
   background-color: #272932;
   padding: 20px;
   display: flex;
+  align-items: center;
   flex-direction: column;
 
+  .first-section {
+    position: absolute;
+    top: 8%;
+    padding: 0 20px;
+  }
+
+  .second-section {
+    width: 100%;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 5%;
+  }
+
   .logo {
-    margin-top: 50px;
     text-align: center;
+    img {
+      width: 75%;
+    }
   }
 
-  ul {
-    margin-top: 75px;
-  }
-
-  &__list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-
-    &:last-child {
-      margin-bottom: 0px;
+  .menu-item {
+    ul {
+      margin-top: 20%;
     }
 
-    .nav-btn {
-      font-family: $font-primary-regular;
-      font-size: 18px;
-      font-weight: 600;
-      color: #ffffff;
-      width: 300px;
-      padding: 15px 30px 15px 30px;
+    &__list {
       display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      text-decoration: none;
-      position: relative;
-      border-radius: 50px;
+      justify-content: center;
+      margin-bottom: 15px;
 
-      i {
-        margin-right: 25px;
+      &:last-child {
+        margin-bottom: 0px;
       }
 
+      .nav-btn {
+        font-family: $font-primary-regular;
+        font-size: 18px;
+        font-weight: 600;
+        color: #ffffff;
+        width: 100%;
+        padding: 15px 30px 15px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-decoration: none;
+        position: relative;
+        border-radius: 50px;
+
+        i {
+          margin-right: 25px;
+        }
+
+      }
+
+      &__active {
+        background-color: rgba(0,0,0,0.4);
+      }
     }
 
-    &__active {
-      background-color: rgba(0,0,0,0.4);
-    }
   }
 
   .profile-container {
-    margin-top: 100px;
     padding: 20px;
     color: #ffffff;
     font-family: $font-primary-regular;
 
     .profile-text {
+      padding-left: 5px;
       font-size: 14px;
       font-weight: 400;
     }
@@ -88,9 +107,11 @@
   }
 
   .logout-container {
+    padding: 0 20px;
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    width: 100%;
     button {
       color: white;
       font-family: $font-primary-regular;
@@ -99,7 +120,7 @@
       background-color: rgba(0,0,0,0.1);
       padding: 15px 30px 15px 30px;
       display: flex;
-      width: 300px;
+      width: 100%;
       border-radius: 50px;
 
       i {

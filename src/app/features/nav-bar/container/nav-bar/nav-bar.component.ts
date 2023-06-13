@@ -1,15 +1,15 @@
-import {Component, OnInit} from '@angular/core';
-import {UserService} from "../../../shared/services/user.service";
+import {AfterViewInit, Component, OnDestroy, OnInit} from '@angular/core';
+import {UserService} from "../../../../shared/services/user.service";
 import {Router} from "@angular/router";
-import {AuthService} from "../../authentication/auth.service";
+import {AuthService} from "../../../authentication/auth.service";
 import {Subscription} from "rxjs";
-import {UserModel} from "../../../pages/authentication/model/user.model";
+import {UserModel} from "../../../../pages/authentication/model/user.model";
 
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html'
 })
-export class NavBarComponent implements OnInit {
+export class NavBarComponent implements OnInit, OnDestroy {
   public isUserLoggedIn = false;
   public userDetails: UserModel = {
     firstName: '',
@@ -44,13 +44,13 @@ export class NavBarComponent implements OnInit {
   }
 
   private getUserInfo(): void {
-    this._userService.currentUserInfo().subscribe((userInfo: UserModel) => {
+    this.isUserLoggedInSubs = this._userService.currentUserInfo().subscribe((userInfo: UserModel) => {
       this.userDetails = userInfo;
     })
   }
 
   private verifyUserStatus(): void {
-    this._authService.isUserLoggedIn().subscribe((isUserLoggedIn) => {
+    this.currentUserInfoSubs = this._authService.isUserLoggedIn().subscribe((isUserLoggedIn) => {
       this.isUserLoggedIn = isUserLoggedIn;
     });
   }
