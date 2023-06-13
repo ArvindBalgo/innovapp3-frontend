@@ -785,5 +785,7 @@
       "userType": "Merchant",
       "id": 3
     }
+  ],
+  "merchants": [
   ]
 }
