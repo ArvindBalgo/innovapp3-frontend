@@ -1,1 +1,5 @@
-<p>stars works!</p>
+<div class="rating__value-stars stars">
+  <span *ngFor="let i of percArray" class="stars__item {{i}}"
+        style="background: linear-gradient(to right, rgba(46, 50, 67,1) 0%, rgba(46, 50, 67,1) {{i}}%, rgba(46, 50, 67,0.3) {{i}}%, rgba(46, 50, 67,0.3) 100%)"></span>
+</div>
+

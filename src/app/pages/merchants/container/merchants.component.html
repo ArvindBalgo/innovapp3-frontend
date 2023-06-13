@@ -2,11 +2,12 @@
 <div class="merchant">
   <h2>List of merchants</h2>
   <ul>
-    <li *ngFor="let merchant of merchants">
+    <li *ngFor="let merchant of merchants" style="width: 100%; display: block">
       <div class="square">
       <img src="./assets/images/profile.png" alt=""/>
 
       <div class="title"><h5 class="tag">{{merchant.tag}}</h5></div>
+        <app-ui-stars [rate]="merchant.rating"></app-ui-stars>
       <p class="name">Name:{{merchant.title}}</p>
       <p class="address">Address:{{merchant.address}}</p>
       <p class="phone">Phone:{{merchant.telephone}}</p>
