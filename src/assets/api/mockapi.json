@@ -787,5 +787,13 @@
     }
   ],
   "merchants": [
+    {
+      "tag": "Florist",
+      "title": "Natasha",
+      "address": "Plaine Magnien",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "3"
+    }
   ]
 }

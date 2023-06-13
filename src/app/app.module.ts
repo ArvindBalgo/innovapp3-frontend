@@ -10,6 +10,7 @@ import {AuthGuardService} from "./features/authentication/auth-guard.service";
 import {AuthService} from "./features/authentication/auth.service";
 import {HttpClientModule} from "@angular/common/http";
 import {NavBarModule} from "./features/nav-bar/nav-bar.module";
+import {HeaderModule} from "./features/header/header.module";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {NavBarModule} from "./features/nav-bar/nav-bar.module";
     }),
     BrowserAnimationsModule,
     HttpClientModule,
-    NavBarModule
+    NavBarModule,
+    HeaderModule
   ],
   providers: [
     AuthGuardService,
