@@ -787,5 +787,192 @@
     }
   ],
   "merchants": [
+    {
+      "tag": "Florist",
+      "title": "Natasha",
+      "address": "Plaine Magnien",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "3"
+    },
+    {
+      "tag": "Florist",
+      "title": "Natasha",
+      "address": "Plaine Magnien",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "3"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Blooming Buds",
+      "address": "Port Louis",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "4"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Petals and Posies",
+      "address": "Grand Baie",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "4.5"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Blossom Paradise",
+      "address": "Flic en Flac",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "3.8"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Rose Garden",
+      "address": "Curepipe",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "4.2"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Evergreen Florals",
+      "address": "Quatre Bornes",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "4.7"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Tropical Blooms",
+      "address": "Black River",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "4.3"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Gardenia Flowers",
+      "address": "Tamarin",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "4.1"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Daisy Dreams",
+      "address": "Bel Air",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "3.9"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Sunflower Shop",
+      "address": "Grand Gaube",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "4.4"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Lily Lane",
+      "address": "Mahebourg",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "4.6"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Orchid Oasis",
+      "address": "Le Morne",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "4.2"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Marigold Blooms",
+      "address": "Rivière Noire",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "4.3"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Tulip Treasures",
+      "address": "Pamplemousses",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "4.0"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Iris Garden",
+      "address": "Trou aux Biches",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "3.8"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Poppy Petals",
+      "address": "Grand Port",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "4.5"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Carnation Corner",
+      "address": "Rivière du Rempart",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "3.7"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Violet Valley",
+      "address": "Flacq",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "4.1"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Daffodil Delights",
+      "address": "Goodlands",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "3.9"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Cherry Blossom",
+      "address": "Bambous",
+      "telephone": "MRU",
+      "website": "MRU",
+      "rating": "4.3"
+    }
   ]
 }
