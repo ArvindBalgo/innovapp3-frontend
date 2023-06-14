@@ -3,7 +3,7 @@ import {UserModel} from "../../../pages/authentication/model/user.model";
 import {UserService} from "../../../shared/services/user.service";
 import {Router} from "@angular/router";
 import {AuthService} from "../../authentication/auth.service";
-import {Subscription} from "rxjs";
+import {filter, Subscription} from "rxjs";
 
 @Component({
   selector: 'app-header',
@@ -44,7 +44,11 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   private getUserInfo(): void {
-    this.isUserLoggedInSubs = this._userService.currentUserInfo().subscribe((userInfo: UserModel) => {
+    this.isUserLoggedInSubs = this._userService.currentUserInfo()
+      .pipe(
+        filter(response => !!response)
+      )
+      .subscribe((userInfo: UserModel) => {
       this.userDetails = userInfo;
     })
   }

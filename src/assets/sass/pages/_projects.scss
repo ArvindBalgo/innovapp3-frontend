@@ -1,0 +1,144 @@
+.project-container {
+  font-family: $font-primary-regular;
+  .project-header {
+    h2 {
+      font-family: $font-primary-bold;
+      font-size: 36px;
+      color: #2E3243;
+      margin-bottom: 30px;
+    }
+  }
+
+  .project-titles {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #272932;
+    border-radius: 4px;
+  }
+
+  .project-items {
+
+    &__ul {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    &__list {
+      background-color: #ffffff;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+    }
+  }
+
+  .list-item {
+    display: flex;
+    width: 100%;
+    li {
+      color: #ffffff;
+      font-family: $font-primary-medium;
+      font-size: 14px;
+      border-right: 1px solid rgba(160, 160, 160, 0.3);
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      &:nth-child(1) {
+        width: 36%;
+        padding-left: 25px;
+        text-align: left;
+        justify-content: flex-start;
+      }
+
+      &:nth-child(2) {
+        width: 12%;
+      }
+
+      &:nth-child(3) {
+        width: 16%;
+      }
+
+      &:nth-child(4) {
+        width: 12%;
+      }
+
+      &:nth-child(5) {
+        width: 16%;
+      }
+
+      &:nth-child(6) {
+        width: 16%;
+      }
+
+    }
+  }
+
+  .list-item-projects {
+    li {
+      color: #2E3243;
+      text-transform: unset;
+
+      &:nth-child(1) {
+        font-family: $font-primary-bold;
+      }
+
+      .bidders {
+        font-family: $font-primary-bold;
+      }
+
+      .status {
+        padding: 5px 10px;
+        border-radius: 4px;
+      }
+
+    }
+
+    .status-1 {
+      color: #0FA515;
+
+      span {
+        background-color: rgba(#0FA515, 0.1);
+      }
+    }
+
+    .status-2 {
+      color: #2072B7;
+
+      span {
+        background-color: rgba(#2072B7, 0.1);
+      }
+    }
+
+    .status-3 {
+      color: #BD0606;
+
+      span {
+        background-color: rgba(#BD0606, 0.1);
+      }
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      button {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid rgba(#A0A0A0, 0.3);
+        border-radius: 50%;
+      }
+    }
+
+  }
+}
