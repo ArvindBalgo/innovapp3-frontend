@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {AuthService} from "./features/authentication/auth.service";
 import {UserService} from "./shared/services/user.service";
 import {UserModel} from "./pages/authentication/model/user.model";
+import {filter} from "rxjs";
 
 @Component({
   selector: 'app-root',
@@ -43,7 +44,11 @@ export class AppComponent {
   }
 
   private getUserInfo(): void {
-    this._userService.currentUserInfo().subscribe((userInfo: UserModel) => {
+    this._userService.currentUserInfo()
+      .pipe(
+        filter(response => !!response)
+      )
+      .subscribe((userInfo: UserModel) => {
       this.userDetails = userInfo;
     })
   }
