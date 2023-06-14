@@ -17,7 +17,7 @@ export class CreateProjectComponent implements OnInit {
   }
 
   postMe() {
-    this._httpClient.post('https://mauriquotes-ai.herokuapp.com/' , 'Award ceremony for 400 people' ).subscribe((response: any) => {
+    this._httpClient.post('https://mauriquotes-ai.herokuapp.com/ai/task-list' , {query: 'Award ceremony for 400 people'} ).subscribe((response: any) => {
       console.log('response');
     });
   }
