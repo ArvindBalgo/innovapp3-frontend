@@ -42,9 +42,9 @@
   background: #272932;
   border-radius: 30px;}
 .tag{
-  width: 41px;
-  height: 19px;
-
+  position: relative;
+  top:6px;
+ text-align: center;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 600;
@@ -66,7 +66,7 @@
   position: relative;
   left: 26.84%;
   right: 7.11%;
-  top: -20%;
+  top: -25%;
   bottom: 65.69%;
 
   font-family: 'Nunito';
@@ -74,10 +74,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;
-  /* identical to box height */
 
-
-  /* Primary/Gris */
 
   color: #272932;
 
@@ -87,7 +84,7 @@
   position: relative;
   left: 26.85%;
   right: 10.53%;
-  top: -20%;
+  top: -25%;
   bottom: 53.97%;
 
   font-family: 'Nunito';
@@ -95,10 +92,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  /* identical to box height */
-
-
-  /* Primary/Gris */
 
   color: #272932;
 }
@@ -106,7 +99,7 @@
   position: relative;
   left: 26.85%;
   right: 15.12%;
-  top: -25%;
+  top: -30%;
 
   bottom: 43.93%;
 
@@ -115,10 +108,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  /* identical to box height */
 
-
-  /* Primary/Gris */
 
   color: #272932;
 
@@ -127,7 +117,7 @@
   position: relative;
   left: 26.85%;
   right: 15.12%;
-  top: -30%;
+  top: -35%;
   bottom: 33.89%;
 
   font-family: 'Nunito Sans';
@@ -135,10 +125,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
-  /* identical to box height */
-
-
-  /* Primary/Gris */
 
   color: #272932;
 
@@ -176,3 +162,6 @@
   font-size: 12px;
   color: #D6254F;
 }
+.rate{  position: relative;
+  left: 65%;
+  top: -40%;}
