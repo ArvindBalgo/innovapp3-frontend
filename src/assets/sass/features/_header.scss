@@ -6,6 +6,7 @@ header {
   width: calc(100% - 320px);
   font-family: $font-primary-regular;
   padding: 0 35px 0 50px;
+  z-index: 1;
 
   .header-container {
     width: 100%;

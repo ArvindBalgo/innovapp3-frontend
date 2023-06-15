@@ -1,6 +1,109 @@
-<h2>
-  create new project
-</h2>
-<button (click)="postMe()">
-  post me
-</button>
+<div class="project-create-container">
+  <div class="project-header">
+    <h2>Create Project</h2>
+  </div>
+
+  <div class="create-project-form">
+
+    <div class="create-project-title">
+      <h3>Projet description</h3>
+    </div>
+
+    <div class="create-form">
+      <form [formGroup]="createForm">
+
+        <div class="create-form-wrapper">
+          <div class="input-item">
+            <div class="input-item-wrapper input-item-wrapper--fluid">
+              <mat-form-field appearance="outline">
+                <mat-label>Title</mat-label>
+                <input matInput type="text" autocomplete="off" formControlName="title" />
+              </mat-form-field>
+            </div>
+          </div>
+
+          <div class="input-item">
+            <div class="input-item-wrapper">
+              <mat-form-field appearance="outline">
+                <mat-label>Budget</mat-label>
+                <input matInput type="number" autocomplete="off" formControlName="budget"/>
+              </mat-form-field>
+            </div>
+            <div class="input-item-wrapper">
+              <mat-form-field appearance="outline">
+                <input matInput [matDatepicker]="picker" formControlName="deadline">
+                <mat-label>Project Deadline</mat-label>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+
+
+            </div>
+          </div>
+
+          <p style="font-size: 16px">Enter project details and let our AI work for you</p>
+          <div class="input-item-response">
+            <div>
+              <mat-form-field appearance="outline">
+                <mat-label>Enter project details and let our AI work for you</mat-label>
+                <input (keydown.enter)="getItems($event)" matInput type="text" formControlName="description" />
+                <button matSuffix mat-icon-button aria-label="Clear" (click)="clearDescription()">
+                  <mat-icon>close</mat-icon>
+                </button>
+              </mat-form-field>
+            </div>
+            <div class="input-item-response-inner">
+              <div>
+                <ul>
+                    <li *ngFor="let project of projectList;">
+                      <mat-checkbox
+                        [checked]="true"
+                        (change)="selectedOption()">
+                      </mat-checkbox>
+
+                      {{ project }}
+                    </li>
+
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="input-item">
+
+            <div class="input-item-wrapper input-item-wrapper--fluid">
+              <mat-form-field appearance="outline">
+                <mat-label>Description</mat-label>
+                <textarea
+                  matInput
+                  cdkAutosizeMinRows="3"
+                  cdkAutosizeMaxRows="15"
+                  autocomplete="off" formControlName="description"
+                ></textarea>
+              </mat-form-field>
+            </div>
+
+          </div>
+
+          <div class="input-item">
+            <div class="input-item-wrapper input-item-wrapper__cta input-item-wrapper--fluid">
+              <button (click)="onRequestQuote()" class="btn btn--primary inverse" type="button">
+                Cancel
+              </button>
+              <button (click)="onRequestQuote()" class="btn btn--primary" type="button">
+                Request quote
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </form>
+    </div>
+
+
+
+  </div>
+
+</div>
