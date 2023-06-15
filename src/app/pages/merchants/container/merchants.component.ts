@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-merchants',
@@ -11,14 +10,13 @@ export class MerchantsComponent implements OnInit {
   public merchants: any;
 
   constructor(
-    private _httpClient: HttpClient,
-    private _router: Router
+    private _httpClient: HttpClient
   ) { }
 
   ngOnInit(): void {
     this._httpClient.get('/api/merchants').subscribe((response: any) => {
       this.merchants = response;
-      console.log('this.merchants', this.merchants);
+      // console.log('this.merchants', this.merchants);
     })
   }
 
