@@ -2,10 +2,12 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {MerchantsComponent} from "./container/merchants.component";
 import {MerchantsRoutingModule} from "./merchants-routing.module";
+import { StarsComponent } from './ui/stars/stars.component';
 
 @NgModule({
   declarations: [
-    MerchantsComponent
+    MerchantsComponent,
+    StarsComponent
   ],
   imports: [
     CommonModule,

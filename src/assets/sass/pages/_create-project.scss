@@ -1,0 +1,114 @@
+.project-create-container {
+  font-family: $font-primary-regular;
+
+  .project-header {
+    h2 {
+      font-family: $font-primary-bold;
+      font-size: 36px;
+      color: #2E3243;
+      margin-bottom: 30px;
+    }
+  }
+
+  .create-project-form {
+
+    .create-project-title {
+      background-color: #2E3243;
+      padding: 0 30px;
+      height: 70px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+
+      h3 {
+        font-family: $font-primary-regular;
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+    }
+
+    .create-form {
+      border: 1px solid #DCDCDC;
+      border-top: none;
+      padding: 0 30px;
+
+      .create-form-wrapper {
+        max-width: 75%;
+        margin: 0 auto;
+      }
+
+
+      .input-item {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 30px;
+
+        &:first-child {
+          padding-top: 50px;
+        }
+      }
+
+      .input-item-wrapper {
+        width: 50%;
+        &__title {
+          font-family: $font-primary-bold;
+          font-size: $font-size-md;
+        }
+        &--fluid {
+          width: 100%;
+        }
+
+        &__cta {
+          margin-bottom: 40px;
+          text-align: center;
+          button {
+            height: 40px;
+
+            &:first-child {
+              margin-right: 10px;
+            }
+            &:last-child {
+              margin-left: 10px;
+            }
+          }
+
+          button.inverse {
+            background-color: #ffffff;
+            color: blue;
+          }
+        }
+
+        .error {
+          color: $warning-color;
+        }
+
+        .input-label {
+          font-family: $font-primary-regular;
+          font-weight: 400;
+          font-size: 16px;
+          color: #000000;
+          display: block;
+          padding-bottom: 12px;
+        }
+      }
+
+      .input-item-response {
+          margin-bottom: 50px;
+          border: 1px solid #000000;
+          padding: 40px 25px 25px 25px;
+          border-radius: 4px;
+
+        .input-item-response-inner {
+            padding: 0 10px 0 10px;
+        }
+      }
+
+    }
+
+
+
+  }
+}

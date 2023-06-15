@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
-import {HTTPOPTIONS} from "../../../../shared/constant/http-options.constants";
+import {animate, animateChild, query, stagger, style, transition, trigger} from "@angular/animations";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-create-project',
@@ -8,19 +9,62 @@ import {HTTPOPTIONS} from "../../../../shared/constant/http-options.constants";
 })
 export class CreateProjectComponent implements OnInit {
 
+  public createForm: FormGroup;
+  public projectList: any;
+
+  public descValue = '';
+
   constructor(
+    private _fb: FormBuilder,
     private _httpClient: HttpClient
-  ) { }
+  ) {
+    this.createForm = this._fb.group({});
+  }
 
   ngOnInit(): void {
-
+    this.setUpCreateForm();
   }
 
   postMe() {
     this._httpClient.post('https://mauriquotes-ai.herokuapp.com/ai/task-list' , {query: 'Award ceremony for 400 people'} ).subscribe((response: any) => {
-      console.log('response');
+      console.log('response', response);
     });
   }
+
+  getItems(event: any) {
+    const textValue = event.target.value;
+    this._httpClient.post('https://mauriquotes-ai.herokuapp.com/ai/task-list' , {query: textValue} ).subscribe((response: any) => {
+      this.projectList = response;
+    });
+  }
+
+  selectedOption() {
+
+  }
+
+  setUpCreateForm() {
+    this.createForm = this._fb.group({
+      title: ['', ''],
+      budget: ['', ''],
+      deadline: ['', ''],
+      description: ['', ''],
+      response: ['', '']
+    });
+  }
+
+  clearDescription() {
+    this.createForm.get('description')?.setValue('');
+
+    this.projectList = [];
+
+  }
+
+  onRequestQuote() {
+
+    console.log('this.createForm.value', this.createForm.value);
+
+  }
+
 
 
 }

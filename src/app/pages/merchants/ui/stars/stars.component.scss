@@ -1,0 +1,74 @@
+.stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stars__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fdcec4;
+  width: 15px;
+  height: 15px;
+}
+
+.stars__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fdcec4;
+  width: 24px;
+  height: 24px;
+}
+
+.stars__item:not(:last-of-type) {
+  margin-right: 4px;
+}
+
+.stars__item::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 2px);
+  height: calc(100% - 4px);
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="31.575" height="30.402" viewBox="0 0 31.575 30.402"> <path data-name="Tracé 1" d="m977.223 685.241-7.775 7.8 2.031 10.988-9.836-5.168-9.678 5.211 1.7-11-8.012-7.767 10.885-1.628 4.726-10.011 5.031 9.99z" transform="translate(-945.648 -673.671)" style="fill:%23fff"/></svg>');
+  margin-top: -1px;
+  background-size: 100% 100%;
+  z-index: 2;
+}
+.stars__item:not(:last-of-type) {
+  margin-right: 2px;
+}
+.stars__item:not(:last-of-type) {
+  margin-right: 4px;
+}
+
+.stars__item::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 7px);
+  height: calc(100% - 7px);
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="31.575" height="30.402" viewBox="0 0 31.575 30.402"> <path data-name="Tracé 1" d="m977.223 685.241-7.775 7.8 2.031 10.988-9.836-5.168-9.678 5.211 1.7-11-8.012-7.767 10.885-1.628 4.726-10.011 5.031 9.99z" transform="translate(-945.648 -673.671)" style="fill:%23fff"/></svg>');
+  background-size: 100% 100%;
+  z-index: 2;
+}
