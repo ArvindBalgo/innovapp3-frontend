@@ -291,5 +291,193 @@
       "bidders": "6",
       "status": 3
     }
+  ],
+  "messages": [
+    {
+      "tag": "Florist",
+      "title": "Natasha Flowers Corner",
+      "project_desc": "Indian Marriage for 330 people",
+      "date": "02/03/23",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "isNew": true,
+      "chats": [
+        {
+          "project_desc": "Indian Marriage for 330 people",
+          "title": "Natasha Flowers Corner",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Hello, how could i help",
+          "date": "20/03/24"
+        },
+        {
+          "project_desc": "Indian Marriage for 330 people",
+          "title": "Me",
+          "profileImg": "./assets/images/messages/client-2.png",
+          "desc": "I need 30 flowers urgent please",
+          "date": "20/03/24"
+        },
+        {
+          "project_desc": "Indian Marriage for 330 people",
+          "title": "Natasha Flowers Corner",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "By when you need them please",
+          "date": "20/03/24"
+        }
+      ]
+    },
+    {
+      "tag": "Electronics",
+      "title": "Quantum Communicator",
+      "project_desc": "Cutting-edge device for instant communication",
+      "date": "06/16/23",
+      "profileImg": "./assets/images/messages/client-2.png",
+      "isNew": true,
+      "chats": [
+        {
+          "project_desc": "Cutting-edge device for instant communication",
+          "title": "Quantum Communicator Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Hello, how can I assist you today?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Cutting-edge device for instant communication",
+          "title": "Customer",
+          "profileImg": "./assets/images/messages/client-2.png",
+          "desc": "I'm interested in the Quantum Communicator. Can you provide more details?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Cutting-edge device for instant communication",
+          "title": "Quantum Communicator Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Certainly! The Quantum Communicator is a cutting-edge device",
+          "date": "06/16/23"
+        }
+      ]
+    },
+    {
+      "tag": "Fashion",
+      "title": "Elegant Timepiece",
+      "project_desc": "Luxurious watch for sophisticated individuals",
+      "date": "06/16/23",
+      "profileImg": "./assets/images/messages/client-3.png",
+      "isNew": true,
+      "chats": [
+        {
+          "project_desc": "Luxurious watch for sophisticated individuals",
+          "title": "Elegant Timepiece Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Hello, how can I assist you today?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Luxurious watch for sophisticated individuals",
+          "title": "Customer",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "I'm interested in the Elegant Timepiece. Can you provide more details?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Luxurious watch for sophisticated individuals",
+          "title": "Elegant Timepiece Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Certainly! The Elegant Timepiece is a luxurious watc",
+          "date": "06/16/23"
+        }
+      ]
+    },
+    {
+      "tag": "Home Decor",
+      "title": "Zen Garden Set",
+      "project_desc": "Create a peaceful oasis in your home",
+      "date": "06/16/23",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "isNew": false,
+      "chats": [
+        {
+          "project_desc": "Create a peaceful oasis in your home",
+          "title": "Zen Garden Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Hello, how can I assist you today?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Create a peaceful oasis in your home",
+          "title": "Customer",
+          "profileImg": "./assets/images/messages/client-2.png",
+          "desc": "I'm interested in the Zen Garden Set.",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Create a peaceful oasis in your home",
+          "title": "Zen Garden Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Absolutely! The Zen Garden Set",
+          "date": "06/16/23"
+        }
+      ]
+    },
+    {
+      "tag": "Fitness",
+      "title": "Smart Fitness Tracker",
+      "project_desc": "Track your health and reach your fitness goals",
+      "date": "06/16/23",
+      "profileImg": "./assets/images/messages/client-2.png",
+      "isNew": false,
+      "chats": [
+        {
+          "project_desc": "Track your health and reach your fitness goals",
+          "title": "Fitness Tracker Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Hello, how can I assist you today?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Track your health and reach your fitness goals",
+          "title": "Customer",
+          "profileImg": "./assets/images/messages/client-2.png",
+          "desc": "I'm interested in the Smart Fitness Tracker. Can you provide more details?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Track your health and reach your fitness goals",
+          "title": "Fitness Tracker Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Certainly! The Smart Fitness Tracker is a high-tech device.",
+          "date": "06/16/23"
+        }
+      ]
+    },
+    {
+      "tag": "Travel",
+      "title": "Adventure Backpack",
+      "project_desc": "Your perfect companion for outdoor exploration",
+      "date": "06/16/23",
+      "profileImg": "./assets/images/messages/client-3.png",
+      "isNew": false,
+      "chats": [
+        {
+          "project_desc": "Your perfect companion for outdoor exploration",
+          "title": "Adventure Backpack Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Hello, how can I assist you today?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Your perfect companion for outdoor exploration",
+          "title": "Customer",
+          "profileImg": "./assets/images/messages/client-2.png",
+          "desc": "I'm interested in the Adventure Backpack. Can you provide more details?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Your perfect companion for outdoor exploration",
+          "title": "Adventure Backpack Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Absolutely! The Adventure Backpack is designed to be your perfect companion for outdoor exploration. It offers ample storage space, durable construction, and ergonomic design for maximum comfort.",
+          "date": "06/16/23"
+        }
+      ]
+    }
   ]
 }

@@ -1,0 +1,45 @@
+<div class="chat-title-wrapper">
+
+  <div class="chat-title">
+    <div class="chat-image">
+      <img src="{{ chat[0].profileImg }}" alt=""/>
+    </div>
+    <div class="chat-desc">
+      <div>
+        <h3> {{ chat[0].title }} </h3>
+        <p>  {{ chat[0].project_desc }}  </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="chat-delete">
+    <button>
+      <img src="./assets/images/header/Trash.png" alt="">
+    </button>
+  </div>
+</div>
+
+
+<div class="chat-title-list">
+  <ul>
+    <li *ngFor="let chat of chat">
+      <div class="chat-title-list-wrapper">
+        <div class="chat-image">
+          <img src="{{ chat.profileImg }}" alt=""/>
+        </div>
+        <div class="chat-desc">
+          <h3>{{ chat.title }}</h3>
+          <p>{{ chat.desc }}</p>
+          <span>{{ chat.date }}</span>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Budget</mat-label>
+    <input matInput type="number" autocomplete="off" formControlName="budget"/>
+  </mat-form-field>
+
+</div>
+
