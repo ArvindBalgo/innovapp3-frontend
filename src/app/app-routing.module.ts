@@ -8,13 +8,23 @@ const routes: Routes = [
     loadChildren: () => import('./pages/authentication/authentication.module').then(m => m.AuthenticationModule),
   },
   {
+    path: 'projects',
+    loadChildren: () => import('./pages/projects/projects.module').then(m => m.ProjectsModule),
+    canActivate: [AuthGuard]
+  },
+  {
     path: 'merchants',
     loadChildren: () => import('./pages/merchants/merchants.module').then(m => m.MerchantsModule),
     canActivate: [AuthGuard]
   },
   {
-    path: 'projects',
-    loadChildren: () => import('./pages/projects/projects.module').then(m => m.ProjectsModule),
+    path: 'messages',
+    loadChildren: () => import('./pages/messages/messages.module').then(m => m.MessagesModule),
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'questionandanswer',
+    loadChildren: () => import('./pages/question-and-answer/question-and-answer.module').then(m => m.QuestionAndAnswerModule),
     canActivate: [AuthGuard]
   },
   {

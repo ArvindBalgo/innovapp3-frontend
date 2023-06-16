@@ -25,12 +25,6 @@ export class CreateProjectComponent implements OnInit {
     this.setUpCreateForm();
   }
 
-  postMe() {
-    this._httpClient.post('https://mauriquotes-ai.herokuapp.com/ai/task-list' , {query: 'Award ceremony for 400 people'} ).subscribe((response: any) => {
-      console.log('response', response);
-    });
-  }
-
   getItems(event: any) {
     const textValue = event.target.value;
     this._httpClient.post('https://mauriquotes-ai.herokuapp.com/ai/task-list' , {query: textValue} ).subscribe((response: any) => {
@@ -54,7 +48,6 @@ export class CreateProjectComponent implements OnInit {
 
   clearDescription() {
     this.createForm.get('description')?.setValue('');
-
     this.projectList = [];
 
   }

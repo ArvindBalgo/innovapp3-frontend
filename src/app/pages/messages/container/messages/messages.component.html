@@ -1,0 +1,28 @@
+<h2 class="mq-title-h2">
+  Messages
+</h2>
+<div class="message-container">
+
+  <div class="chat-list">
+      <ul>
+        <li *ngFor="let message of messages; let i = index" (click)="selectMessage(i)" class="chat-item">
+          <div class="chat-image">
+            <img src="{{ message.profileImg }}" alt=""/>
+          </div>
+          <div class="chat-desc">
+            <div class="chat-title-wrapper">
+              <h3>{{ message.title }}</h3>
+              <span *ngIf="message.isNew" class="new-message">New</span>
+            </div>
+            <p class="chat-title">{{ message.project_desc }}</p>
+            <p class="chat-date">{{ message.date }}</p>
+          </div>
+        </li>
+      </ul>
+  </div>
+
+  <div class="chat-messages">
+    <app-chat [chat]="this.chat"></app-chat>
+  </div>
+
+</div>
