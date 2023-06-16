@@ -34,18 +34,20 @@
   "merchants": [
     {
       "tag": "Florist",
-      "title": "Natasha",
+      "title": "Natasha Flowers Corner",
       "address": "Plaine Magnien",
-      "telephone": "MRU",
-      "website": "MRU",
+      "telephone": "57777777",
+      "website": "https://www.flowers.com/",
+      "profileImg": "./assets/images/messages/client-1.png",
       "rating": "3"
     },
     {
       "tag": "Florist",
-      "title": "Natasha",
+      "title": "Natasha Flowers Corner ",
       "address": "Plaine Magnien",
       "telephone": "MRU",
-      "website": "MRU",
+      "website": "https://www.netflix.com/",
+      "profileImg": "./assets/images/messages/client-2.png",
       "rating": "3"
     },
 
@@ -54,7 +56,8 @@
       "title": "Blooming Buds",
       "address": "Port Louis",
       "telephone": "MRU",
-      "website": "MRU",
+      "website": "https://www.bbc.co.uk/",
+      "profileImg": "./assets/images/messages/client-3.png",
       "rating": "4"
     },
 
@@ -63,7 +66,8 @@
       "title": "Petals and Posies",
       "address": "Grand Baie",
       "telephone": "MRU",
-      "website": "MRU",
+      "website": "https://www.amazon.com/",
+      "profileImg": "./assets/images/messages/client-2.png",
       "rating": "4.5"
     },
 
@@ -72,7 +76,8 @@
       "title": "Blossom Paradise",
       "address": "Flic en Flac",
       "telephone": "MRU",
-      "website": "MRU",
+      "website": "https://www.spotify.com/",
+      "profileImg": "./assets/images/messages/client-3.png",
       "rating": "3.8"
     },
 
@@ -81,7 +86,8 @@
       "title": "Rose Garden",
       "address": "Curepipe",
       "telephone": "MRU",
-      "website": "MRU",
+      "website": "https://www.reddit.com/",
+      "profileImg": "./assets/images/messages/client-1.png",
       "rating": "4.2"
     },
 
@@ -90,7 +96,8 @@
       "title": "Evergreen Florals",
       "address": "Quatre Bornes",
       "telephone": "MRU",
-      "website": "MRU",
+      "website": "https://www.instagram.com/",
+      "profileImg": "./assets/images/messages/client-3.png",
       "rating": "4.7"
     },
 
@@ -99,7 +106,8 @@
       "title": "Tropical Blooms",
       "address": "Black River",
       "telephone": "MRU",
-      "website": "MRU",
+      "website": "https://www.airbnb.com/",
+      "profileImg": "./assets/images/messages/client-2.png",
       "rating": "4.3"
     },
 
@@ -108,7 +116,8 @@
       "title": "Gardenia Flowers",
       "address": "Tamarin",
       "telephone": "MRU",
-      "website": "MRU",
+      "website": "https://www.pexels.com/",
+      "profileImg": "./assets/images/messages/client-1.png",
       "rating": "4.1"
     },
 
@@ -117,7 +126,8 @@
       "title": "Daisy Dreams",
       "address": "Bel Air",
       "telephone": "MRU",
-      "website": "MRU",
+      "website": "https://www.github.com/",
+      "profileImg": "./assets/images/messages/client-1.png",
       "rating": "3.9"
     },
 
@@ -127,6 +137,7 @@
       "address": "Grand Gaube",
       "telephone": "MRU",
       "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
       "rating": "4.4"
     },
 
@@ -136,6 +147,7 @@
       "address": "Mahebourg",
       "telephone": "MRU",
       "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
       "rating": "4.6"
     },
 
@@ -145,6 +157,7 @@
       "address": "Le Morne",
       "telephone": "MRU",
       "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
       "rating": "4.2"
     },
 
@@ -154,6 +167,7 @@
       "address": "Rivière Noire",
       "telephone": "MRU",
       "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
       "rating": "4.3"
     },
 
@@ -163,6 +177,7 @@
       "address": "Pamplemousses",
       "telephone": "MRU",
       "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
       "rating": "4.0"
     },
 
@@ -172,6 +187,7 @@
       "address": "Trou aux Biches",
       "telephone": "MRU",
       "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
       "rating": "3.8"
     },
 
@@ -181,6 +197,7 @@
       "address": "Grand Port",
       "telephone": "MRU",
       "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
       "rating": "4.5"
     },
 
@@ -190,6 +207,7 @@
       "address": "Rivière du Rempart",
       "telephone": "MRU",
       "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
       "rating": "3.7"
     },
 
@@ -199,6 +217,7 @@
       "address": "Flacq",
       "telephone": "MRU",
       "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
       "rating": "4.1"
     },
 
@@ -208,6 +227,7 @@
       "address": "Goodlands",
       "telephone": "MRU",
       "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
       "rating": "3.9"
     },
 
@@ -217,6 +237,7 @@
       "address": "Bambous",
       "telephone": "MRU",
       "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
       "rating": "4.3"
     }
   ],
