@@ -20,8 +20,7 @@
   /* Border */
   border: 1px solid rgba(160, 160, 160, 0.3);
   border-radius: 4px;
-  position: relative;
-  margin-left: 400px;
+
 }
 
 .title{display: flex;
@@ -165,3 +164,57 @@
 .rate{  position: relative;
   left: 65%;
   top: -40%;}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.grid-item {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+.filter-sort-container {
+  position:relative ;
+  left:850px;
+  display: flex;
+  align-items: center;
+}
+
+.filter, .sort {
+  margin-right: 25px;
+}
+#filterInput {
+  width: 250px;
+  height: 48px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-family: 'Nunito Sans', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.dropdown {
+
+}
+
+.sort select {
+  width: 250px;
+  height: 48px;
+  position: relative;
+  top:-6px;
+  font-family: 'Nunito Sans', serif;
+  font-style: normal;
+
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #DCDCDC;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+

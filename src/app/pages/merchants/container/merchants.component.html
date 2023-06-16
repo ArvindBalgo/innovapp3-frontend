@@ -1,9 +1,22 @@
 <div class="merchant">
-  <h2>List of merchants</h2>
-  <div class="row">
+  <h2>Merchants List</h2>
+  <div class="filter-sort-container">
+    <div class="filter">
+      <input type="text" placeholder="Filter by name" id="filterInput">
+    </div>
+    <div class="sort">
+      <select>
+        <option value="default">Sort by</option>
+        <option value="Florist">Florist</option>
+        <option value="Airport">Airport</option>
+        <option value="construction">Construction</option>
+      </select>
+    </div>
+  </div>
+  <div class="grid-container">
     <div class="col-md-4" *ngFor="let merchant of merchants">
       <div class="square">
-        <img src="./assets/images/profile.png" alt="" />
+        <img class="profile" src="./assets/images/profile.png" alt="" />
 
         <div class="title"><h5 class="tag">{{merchant.tag}}</h5></div>
         <div class="rate"><app-ui-stars [rate]="merchant.rating"></app-ui-stars></div>
@@ -16,7 +29,9 @@
           <span class="plus">+</span>
         </button>
       </div>
-      <br>
     </div>
   </div>
-</div>
+
+
+  </div>
+
