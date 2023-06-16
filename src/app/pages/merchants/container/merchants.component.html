@@ -1,22 +1,41 @@
 <div class="merchant">
-  <h2>List of merchants</h2>
-  <div class="row">
-    <div class="col-md-4" *ngFor="let merchant of merchants">
-      <div class="square">
-        <img src="./assets/images/profile.png" alt="" />
-
-        <div class="title"><h5 class="tag">{{merchant.tag}}</h5></div>
-        <div class="rate"><app-ui-stars [rate]="merchant.rating"></app-ui-stars></div>
-        <p class="name">Name: {{merchant.title}}</p>
-        <p class="address">Address: {{merchant.address}}</p>
-        <p class="phone">Phone: {{merchant.telephone}}</p>
-        <p class="website">Website: {{merchant.website}}</p>
-        <button class="show-more-button">
-          <span class="button-text">Show more</span>
-          <span class="plus">+</span>
-        </button>
-      </div>
-      <br>
-    </div>
+  <div>
+    <h2 class="mq-title-h2">List of merchants</h2>
+    <!--    dropdown here-->
   </div>
+
+  <div class="marchant-list-container">
+    <ul class="marchant-list-ul">
+      <li *ngFor="let merchant of merchants" class="marchant-list">
+
+        <div class="merchant-container">
+          <div class="merchant-image">
+            <img src="{{ merchant.profileImg }}" alt=""/>
+          </div>
+          <div class="merchant-desc">
+            <div class="merchant-title">
+              <span class="merchant-tag">{{merchant.tag}}</span>
+              <app-ui-stars [rate]="merchant.rating"></app-ui-stars>
+            </div>
+            <div class="merchant-info">
+                 <h3>{{merchant.title}}</h3>
+                 <p class="address">Address: {{merchant.address}}</p>
+                 <p class="phone">Phone: {{merchant.telephone}}</p>
+                 <p class="website">Website: {{merchant.website}}</p>
+            </div>
+
+            <div class="merchant-cta">
+                <button>
+                  Show More +
+                </button>
+            </div>
+
+          </div>
+        </div>
+
+      </li>
+    </ul>
+
+  </div>
+
 </div>

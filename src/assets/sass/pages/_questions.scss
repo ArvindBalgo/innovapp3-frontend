@@ -1,0 +1,19 @@
+.question-container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dcdcdc;
+    padding: 25px;
+
+    * {
+      margin-bottom: 0 !important;
+      font-family: $font-primary-regular !important;
+    }
+
+
+  .question-input {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+}
