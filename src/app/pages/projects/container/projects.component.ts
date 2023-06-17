@@ -224,16 +224,16 @@ export class ProjectsComponent implements OnInit {
     })
 
 
-   /* this._httpClient.get('/api/projects').subscribe((response: any) => {
+    this._httpClient.get('/api/projects').subscribe((response: any) => {
       this.projects = response;
-    })*/
+    })
 
-/*
+
     this._httpClient.get(`${this.URL_BACKEND}api/quotes`).subscribe((response: any) => {
-      console.log(response.data, 'RESPONSE DATA');
       response.data.forEach((project: any) => {
+        console.log('response', response);
         this.list.push({
-          descriptions: project.title,
+          descriptions: project.description,
           deadline: project.deadline,
           budget: project.budjet,
           bidders: project.bidders,
@@ -248,7 +248,6 @@ export class ProjectsComponent implements OnInit {
     this._httpClient.get('/api/projects').subscribe((response: any) => {
       this.projects = response;
     })
-*/
   }
 
   getStatus(statuscode: number): string {
