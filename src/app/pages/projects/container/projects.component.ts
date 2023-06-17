@@ -16,23 +16,24 @@ export class ProjectsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this._httpClient.get('/api/projects').subscribe((response: any) => {
-      this.projects = response;
-    })
-
     this._httpClient.get(`${this.URL_BACKEND}api/quotes`).subscribe((response: any) => {
       console.log(response.data, 'RESPONSE DATA');
       response.data.forEach((project: any) => {
         this.list.push({
-          descriptions: project.description,
-          deadline: "20/03/2023",
+          descriptions: project.title,
+          deadline: project.deadline,
           budget: project.budjet,
-          bidders: "10",
+          bidders: project.bidders,
           status: 1
         })
       })
+    })
+    this.contestFunction();
+  }
 
-      console.log(this.list)
+  mockData() {
+    this._httpClient.get('/api/projects').subscribe((response: any) => {
+      this.projects = response;
     })
   }
 
@@ -47,6 +48,11 @@ export class ProjectsComponent implements OnInit {
       default:
         return 'In Progress'
     }
+  }
+
+
+  contestFunction() {
+    console.log('test')
   }
 
 }
