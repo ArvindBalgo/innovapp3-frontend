@@ -8,7 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "heroku-postbuild": "ng build — prod",
+    "heroku-postbuild": "ng build",
     "api": "json-server src/assets/api/mockapi.json --routes src/assets/api/routes.json --no-cors=true"
   },
   "private": true,
