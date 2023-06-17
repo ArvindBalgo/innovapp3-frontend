@@ -11,6 +11,7 @@ export class CreateProjectComponent implements OnInit {
 
   public createForm: FormGroup;
   public projectList:  Array<{index: number;label: string; checked: boolean}> = [];
+  private URL_BACKEND = 'https://mauriquotes-backend.herokuapp.com/';
 
   public descValue = '';
 
@@ -68,6 +69,22 @@ export class CreateProjectComponent implements OnInit {
       is_anonym: 1,
       is_ai: 1
     }
+
+    const fm = new FormData();
+
+    fm.append('customer_id', '2')
+    fm.append('description',filteredList.join('') + `<perso-info>${specificDescription}</perso-info>`)
+    fm.append('budjet',  this.createForm.value.budget)
+    fm.append('is_anonym', '1')
+    fm.append('is_ai', '1')
+    fm.append('deadline', '22/02/2024');
+    fm.append('title', this.createForm.value.title);
+    console.log(this.createForm.value)
+
+
+    this._httpClient.post(`${this.URL_BACKEND}api/quotes`, fm).subscribe(info => {
+      console.log(info)
+    })
     console.log(payload)
   }
 

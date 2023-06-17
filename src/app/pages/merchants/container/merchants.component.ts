@@ -11,6 +11,7 @@ export class MerchantsComponent implements OnInit {
   public list: any = [];
   private URL_BACKEND = 'https://mauriquotes-backend.herokuapp.com/';
 
+
   constructor(
     private _httpClient: HttpClient
   ) { }
@@ -38,6 +39,7 @@ export class MerchantsComponent implements OnInit {
 
       console.log(this.list)
     })
+
   }
 
 }
