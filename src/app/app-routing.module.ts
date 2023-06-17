@@ -18,6 +18,11 @@ const routes: Routes = [
     canActivate: [AuthGuard]
   },
   {
+    path: 'jobs',
+    loadChildren: () => import('./pages/jobs/jobs.module').then(m => m.JobsModule),
+    canActivate: [AuthGuard]
+  },
+  {
     path: 'messages',
     loadChildren: () => import('./pages/messages/messages.module').then(m => m.MessagesModule),
     canActivate: [AuthGuard]

@@ -1,0 +1,39 @@
+<div class="project-container">
+  <div class="project-header">
+    <h2>List of jobs</h2>
+
+    <!--    dropdown here-->
+  </div>
+
+  <div class="project-titles">
+    <ul class="list-item">
+      <li>Project Description</li>
+      <li>Client</li>
+      <li>Budget</li>
+      <li>Deadline</li>
+      <li>Status</li>
+<li></li>
+    </ul>
+  </div>
+
+  <div class="project-items">
+    <ul class="project-items__ul">
+      <li *ngFor="let project of projects" class="project-items__list">
+        <ul class="list-item list-item-projects">
+          <li>{{ project.description }}</li>
+          <li>{{ project.client}}</li>
+          <li>{{ project.budget }}</li>
+          <li>{{ project.deadline }}</li>
+          <li ngClass="{{'status-' + project.status}}"><span class="status">{{ getStatus(project.status) }} {{project.status}}</span></li>
+          <li class="button-container">
+            <button>
+              <img src="./assets/images/projects/eye.png" alt=""/>
+            </button>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </div>
+
+</div>

@@ -10,7 +10,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 export class CreateProjectComponent implements OnInit {
 
   public createForm: FormGroup;
-  public projectList: any;
+  public projectList:  Array<{index: number;label: string; checked: boolean}> = [];
 
   public descValue = '';
 
@@ -19,6 +19,7 @@ export class CreateProjectComponent implements OnInit {
     private _httpClient: HttpClient
   ) {
     this.createForm = this._fb.group({});
+
   }
 
   ngOnInit(): void {
@@ -28,12 +29,14 @@ export class CreateProjectComponent implements OnInit {
   getItems(event: any) {
     const textValue = event.target.value;
     this._httpClient.post('https://mauriquotes-ai.herokuapp.com/ai/task-list' , {query: textValue} ).subscribe((response: any) => {
-      this.projectList = response;
+      response.forEach((task: string, index: number) => {
+        this.projectList.push({
+          index,
+          label: task,
+          checked: true
+        });
+      })
     });
-  }
-
-  selectedOption() {
-
   }
 
   setUpCreateForm() {
@@ -55,9 +58,12 @@ export class CreateProjectComponent implements OnInit {
   onRequestQuote() {
 
     console.log('this.createForm.value', this.createForm.value);
+    console.log(this.projectList.filter(item => item.checked))
 
   }
 
 
-
+  toggleProject(project: {label: string; checked: boolean, index: number}) {
+    this.projectList[project.index].checked = !this.projectList[project.index].checked;
+  }
 }

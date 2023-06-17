@@ -56,12 +56,7 @@
               <div>
                 <ul>
                     <li *ngFor="let project of projectList;">
-                      <mat-checkbox
-                        [checked]="true"
-                        (change)="selectedOption()">
-                      </mat-checkbox>
-
-                      {{ project }}
+                      <mat-checkbox [checked]="project.checked" (change)="toggleProject(project)">{{ project.label }}</mat-checkbox>
                     </li>
 
                 </ul>
