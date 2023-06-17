@@ -2,6 +2,10 @@
   max-width: 800px;
   margin: 0 auto;
   margin-top: 50px;
+
+  //@media #{$mobile} {
+  //  max-width: 100% !important;
+  //}
 }
 
 .wrapper {
@@ -10,7 +14,18 @@
   background-color: #F6F6F6;
   min-height: calc(100vh - 100px);
 
+  @media #{$mobile} {
+    width: 100%;
+    margin: 75px auto 0 auto;
+  }
+
   .inner-wrapper {
     padding: 45px 75px 75px 75px;
+
+    @media #{$mobile} {
+      width: 100%;
+      margin: 75px auto 0 auto;
+    }
+
   }
 }

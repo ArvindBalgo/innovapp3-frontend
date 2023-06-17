@@ -4,6 +4,7 @@ import {UserService} from "../../../shared/services/user.service";
 import {Router} from "@angular/router";
 import {AuthService} from "../../authentication/auth.service";
 import {filter, Subscription} from "rxjs";
+import {NavBarService} from "../../nav-bar/container/services/nav-bar.service";
 
 @Component({
   selector: 'app-header',
@@ -21,6 +22,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     id: 0,
     userType: '',
   };
+  public isSideBarOpen = false;
 
   private currentUserInfoSubs: Subscription | undefined;
   private isUserLoggedInSubs: Subscription | undefined;
@@ -28,7 +30,8 @@ export class HeaderComponent implements OnInit, OnDestroy {
   constructor(
     private _userService: UserService,
     private _router: Router,
-    private _authService: AuthService
+    private _authService: AuthService,
+    private _navBarService: NavBarService,
   ) {
 
   }
@@ -57,6 +60,13 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.currentUserInfoSubs = this._authService.isUserLoggedIn().subscribe((isUserLoggedIn) => {
       this.isUserLoggedIn = isUserLoggedIn;
     });
+  }
+
+  public openSideMenu() {
+    this.isSideBarOpen = !this.isSideBarOpen;
+
+    console.log('this.isSideBarOpen', this.isSideBarOpen);
+    this._navBarService.sideBarState = this.isSideBarOpen;
   }
 
 }

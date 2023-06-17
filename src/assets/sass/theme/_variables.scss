@@ -20,3 +20,11 @@ $font-size-lg: 20px;
 
 //Transitions
 $general-transition: all 300ms ease;
+
+$breakpoint-mobile: 480px;
+$mobile: "only screen and (max-width: #{$breakpoint-mobile})";
+$desktop: "only screen and (min-width: #{$breakpoint-mobile})";
+
+//@media #{$mobile} {
+//  max-width: 100% !important;
+//}

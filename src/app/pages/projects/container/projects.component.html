@@ -1,42 +1,42 @@
 <div class="project-container">
-  <div class="project-header">
-    <h2>Projects</h2>
+<!--  <div class="project-header">-->
+<!--    <h2>Projects</h2>-->
 
-<!--    dropdown here-->
-  </div>
+<!--&lt;!&ndash;    dropdown here&ndash;&gt;-->
+<!--  </div>-->
 
-  <div class="project-titles">
-    <ul class="list-item">
-      <li>Project Description</li>
-      <li>Deadline</li>
-      <li>Budget</li>
-      <li>Bidders</li>
-      <li>Status</li>
-      <li>-</li>
-    </ul>
-  </div>
+<!--  <div class="project-titles">-->
+<!--    <ul class="list-item">-->
+<!--      <li>Project Description</li>-->
+<!--      <li>Deadline</li>-->
+<!--      <li>Budget</li>-->
+<!--      <li>Bidders</li>-->
+<!--      <li>Status</li>-->
+<!--      <li>-</li>-->
+<!--    </ul>-->
+<!--  </div>-->
 
-  <div class="project-items">
-    <ul class="project-items__ul">
-      <li *ngFor="let project of projects" class="project-items__list">
-        <ul class="list-item list-item-projects">
-          <li>{{ project.descriptions }}</li>
-          <li>{{ project.deadline }}</li>
-          <li>{{ project.budget }}</li>
-          <li>{{ project.bidders }} / <span class="bidders">10</span></li>
-          <li ngClass="{{'status-' + project.status}}"><span class="status">{{ getStatus(project.status) }} {{project.status}}</span></li>
-          <li class="button-container">
-            <button>
-              <img src="./assets/images/projects/trash.png" alt=""/>
-            </button>
-            <button>
-              <img src="./assets/images/projects/eye.png" alt=""/>
-            </button>
-          </li>
-        </ul>
-      </li>
+<!--  <div class="project-items">-->
+<!--    <ul class="project-items__ul">-->
+<!--      <li *ngFor="let project of projects" class="project-items__list">-->
+<!--        <ul class="list-item list-item-projects">-->
+<!--          <li>{{ project.descriptions }}</li>-->
+<!--          <li>{{ project.deadline }}</li>-->
+<!--          <li>{{ project.budget }}</li>-->
+<!--          <li>{{ project.bidders }} / <span class="bidders">10</span></li>-->
+<!--          <li ngClass="{{'status-' + project.status}}"><span class="status">{{ getStatus(project.status) }} {{project.status}}</span></li>-->
+<!--          <li class="button-container">-->
+<!--            <button>-->
+<!--              <img src="./assets/images/projects/trash.png" alt=""/>-->
+<!--            </button>-->
+<!--            <button>-->
+<!--              <img src="./assets/images/projects/eye.png" alt=""/>-->
+<!--            </button>-->
+<!--          </li>-->
+<!--        </ul>-->
+<!--      </li>-->
 
-    </ul>
-  </div>
+<!--    </ul>-->
+<!--  </div>-->
 
 </div>
