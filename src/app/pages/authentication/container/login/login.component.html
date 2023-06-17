@@ -1,39 +1,39 @@
-<div class="form-wrapper" novalidate>
+<div id="login" class="form-wrapper" novalidate>
+  <div class="log">
+    <img src="../../../../../assets/images/logo.png" alt=""/>
+  </div>
+  <div class="welcome">
+    <p class="text">Welcome Back!</p>
+    <p class="details">Please enter your details</p>
+  </div>
 
-  <h2 id="login" class="form-wrapper__title">Login</h2>
 
   <form [formGroup]="loginForm">
+    <div class="inputs">
+    <div class="input-wrapper">
+      <mat-form-field [ngClass]="{'input-error': (isSubmitted && loginForm.get('userName')?.invalid)}" appearance="fill">
+        <mat-label>User name</mat-label>
+        <input autocomplete="off" formControlName="userName" matInput type="text" class="fields" placeholder="Email">
+      </mat-form-field>
+      <span *ngIf="isSubmitted && loginForm.get('userName')?.invalid" class="error">Field required</span>
+    </div>
 
-    <div class="input-group">
-        <div class="input-wrapper mr-25">
-            <mat-form-field [ngClass]="{'input-error': (isSubmitted && loginForm.get('userName')?.invalid)}" appearance="fill">
-                <mat-label>User name</mat-label>
-                <input autocomplete="off" formControlName="userName" matInput type="text" />
-            </mat-form-field>
-            <span *ngIf="isSubmitted && loginForm.get('userName')?.invalid" class="error">Field required</span>
-        </div>
-
-        <div class="input-wrapper ml-25">
-            <mat-form-field [ngClass]="{'input-error': (isSubmitted && loginForm.get('password')?.invalid)}" appearance="fill">
-                <mat-label>Password</mat-label>
-                <input autocomplete formControlName="password" matInput type="password" />
-            </mat-form-field>
-            <span *ngIf="isSubmitted && loginForm.get('password')?.value === ''" class="error">Field required -</span><br>
-            <span *ngIf="isSubmitted && loginForm.get('password')?.value !== '' && loginForm.get('password')?.invalid" class="error errorPswLength">Minimum 5 characters</span>
-        </div>
+    <div class="input-wrapper">
+      <mat-form-field [ngClass]="{'input-error': (isSubmitted && loginForm.get('password')?.invalid)}" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input autocomplete formControlName="password" matInput type="password" />
+      </mat-form-field>
+      <span *ngIf="isSubmitted && loginForm.get('password')?.value === ''" class="error">Field required -</span><br>
+      <span *ngIf="isSubmitted && loginForm.get('password')?.value !== '' && loginForm.get('password')?.invalid" class="error errorPswLength">Minimum 5 characters</span>
     </div>
 
     <span *ngIf="noProfileFound" class="form-wrapper__error">User name or password is invalid</span>
 
     <div class="form-wrapper__cta">
-      <button (click)="onLogin()" class="btn btn--primary"
-      type="button">
-        Login
-      </button>
+      <button (click)="onLogin()" class="btn btn--primary" type="button">Login</button>
+      <button class="btn btn--secondary" type="button">Forgot Password</button> <!-- Add the "Forgot Password" button -->
     </div>
-
-    <a class="form-wrapper__link" href="" routerLink="/account/signup">New User? Click to signup!!</a>
-
+</div>
+    <a class="welcome form-wrapper__link" href="" routerLink="/account/signup">Don't have an account? Register</a>
   </form>
-
 </div>

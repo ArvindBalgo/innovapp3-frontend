@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup, Validators} from "@angular/forms";
-import {Router} from "@angular/router";
-import {HttpClient} from "@angular/common/http";
-import {HTTPOPTIONS} from "../../../../shared/constant/http-options.constants";
-import {SignupUser} from "../../model/signupUser.model";
-import {MatRadioChange} from "@angular/material/radio";
-import {USER_TYPES} from "../../../../shared/constant/user-type.contants";
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { Router } from "@angular/router";
+import { HttpClient } from "@angular/common/http";
+import { HTTPOPTIONS } from "../../../../shared/constant/http-options.constants";
+import { SignupUser } from "../../model/signupUser.model";
+import { MatRadioChange } from "@angular/material/radio";
+import { USER_TYPES } from "../../../../shared/constant/user-type.contants";
 
 @Component({
   selector: 'app-signup',
@@ -14,6 +14,8 @@ import {USER_TYPES} from "../../../../shared/constant/user-type.contants";
 export class SignupComponent implements OnInit {
   public signUpForm: FormGroup;
   public isSubmitted = false;
+  options = ['-Select-','Option 1', 'Option 2', 'Option 3'];
+  selectedOption: string='';
 
   constructor(
     private _fb: FormBuilder,
@@ -60,5 +62,4 @@ export class SignupComponent implements OnInit {
       this.signUpForm.get('userType')?.setValue(USER_TYPES.ROLE_CLIENT);
     }
   }
-
 }

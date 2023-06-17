@@ -1,5 +1,7 @@
 <div class="form-wrapper" novalidate>
-
+  <div class="log">
+    <img src="../../../../../assets/images/logo.png" alt=""/>
+  </div>
   <h2 class="form-wrapper__title">Create an account.</h2>
 
   <form [formGroup]="signUpForm">
@@ -85,6 +87,10 @@
                 Field required
             </span>
       </div>
+      <div class="input-wrapper ml-25"><select [(ngModel)]="selectedOption">
+        <option *ngFor="let option of options" [value]="option" [defaultSelected]="options[1]" >{{ option }}</option>
+      </select>
+      </div>
 
     </div>
 
@@ -117,6 +123,19 @@
                 Field required
             </span>
     </div>
+    <div class="input-wrapper input-wrapper--fluid">
+      <mat-form-field appearance="fill" [ngClass]="{'input-error': (isSubmitted && signUpForm.get('website')?.invalid)}">
+        <mat-label>Website</mat-label>
+        <input matInput formControlName="website" type="text" />
+      </mat-form-field>
+
+      <span class="error" *ngIf="isSubmitted && signUpForm.get('website')?.value !== '' && signUpForm.get('website')?.invalid">
+    Please enter a valid website address
+  </span>
+      <span class="error" *ngIf="isSubmitted && signUpForm.get('website')?.value === ''">
+    Field required
+  </span>
+    </div>
 
     <div class="form-wrapper__cta">
       <button type="button" class="btn btn--primary"
@@ -125,7 +144,7 @@
       </button>
     </div>
 
-    <a class="form-wrapper__link" href="" routerLink="/account/login">Already Registered? Click to login!!</a>
+    <a class="welcome form-wrapper__link" href="" routerLink="/account/login">Already Registered? Click to login!!</a>
   </form>
 
 </div>

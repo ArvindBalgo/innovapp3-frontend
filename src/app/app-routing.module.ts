@@ -17,6 +17,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/merchants/merchants.module').then(m => m.MerchantsModule),
     canActivate: [AuthGuard]
   },
+
   {
     path: 'jobs',
     loadChildren: () => import('./pages/jobs/jobs.module').then(m => m.JobsModule),
