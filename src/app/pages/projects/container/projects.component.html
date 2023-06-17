@@ -24,7 +24,7 @@
           <li>{{ project.descriptions }}</li>
           <li>{{ project.deadline }}</li>
           <li>{{ project.budget }}</li>
-          <li>{{ project.bidders }} / <span class="bidders">10</span></li>
+          <li><span class="bidders" style="margin-left: 1px"> {{ project.bidders }}</span></li>
           <li ngClass="{{'status-' + project.status}}"><span class="status">{{ getStatus(project.status) }} {{project.status}}</span></li>
           <li class="button-container">
             <button>

@@ -219,21 +219,39 @@ export class ProjectsComponent implements OnInit {
     }
   ];
 
-    merchants.forEach(merchant => {
-      console.log(merchant)
-    })
 
 
-    this._httpClient.get('/api/projects').subscribe((response: any) => {
+   /* merchants.forEach(merchant => {
+      const fm = new FormData();
+
+      fm.append('brn', merchant.brn)
+      fm.append('description', merchant.description)
+      fm.append('name', merchant.name)
+      fm.append('mcb_account', merchant.mcb_account)
+      fm.append('link', merchant.link)
+      fm.append('category_id', merchant.category_id + '')
+      fm.append('contact_number', merchant.contact_number)
+      fm.append('tags', JSON.stringify([1]))
+
+      this._httpClient.post(`${this.URL_BACKEND}api/merchants`, fm).subscribe(info => {
+        console.log(info)
+      })
+    })*/
+
+
+   /*
+   "brn":"98765432","description":"Leading building and construction company specializing in residential and commercial projects. We provide top-quality craftsmanship and innovative solutions to meet your construction needs. From design to completion, we ensure timely delivery and exceptional customer satisfaction.","name":"Construction Masters","mcb_account":"12345678","link":"www.constructionmasters.com","category_id":1,"contact_number":"555-123-4567"
+
+   this._httpClient.get('/api/projects').subscribe((response: any) => {
       this.projects = response;
-    })
+    })*/
 
 
     this._httpClient.get(`${this.URL_BACKEND}api/quotes`).subscribe((response: any) => {
+      console.log(response.data, 'RESPONSE DATA');
       response.data.forEach((project: any) => {
-        console.log('response', response);
         this.list.push({
-          descriptions: project.description,
+          descriptions: project.title,
           deadline: project.deadline,
           budget: project.budjet,
           bidders: project.bidders,
@@ -248,6 +266,7 @@ export class ProjectsComponent implements OnInit {
     this._httpClient.get('/api/projects').subscribe((response: any) => {
       this.projects = response;
     })
+
   }
 
   getStatus(statuscode: number): string {
