@@ -1,0 +1,93 @@
+.form-wrapper {
+  max-width: 800px;
+  height: 900px;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: $primary-box-shadow;
+  padding: 25px 50px;
+
+.log{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+
+}
+  &__title {
+    font-family: $font-primary-bold !important;
+    font-size: $font-size-lg !important;
+    text-align: center;
+    margin-bottom: 25px !important;
+  }
+
+
+  &__error {
+    color: red;
+    text-align: center; /* Center the error message */
+    margin-top: 10px; /* Add some space above the error message */
+  }
+
+
+  &__cta {
+    text-align: center;
+    margin-top: 20px; /* Add some space above the button */
+  }
+
+
+  &__link {
+    color: #D6254F;
+    font-family: $font-primary-medium;
+    font-size: $font-size-sm;
+    text-align: center;
+    margin-top: 10px; /* Add some space above the link */
+    &:active {
+      color: $primary-color;
+    }
+  }
+
+  .welcome {
+    display: flex;
+    justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      ;
+ }
+.text{  width: 296px;
+  height: 55px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;}
+  .details{width: 179px;
+    height: 22px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #bc0303;}
+
+
+
+    .forget,
+  .register {
+    text-align: center;
+  }
+
+  /* Center the form submit button */
+  button {
+    width: 400px;
+    height: 48px;
+    background: #2E3243;
+    border-radius: 4px;
+    color: white;
+    margin-top: 20px; /* Add some space above the button */
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+

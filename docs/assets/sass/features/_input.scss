@@ -1,0 +1,22 @@
+.input-group {
+  width: 100%;
+  display: flex;
+}
+
+.input-wrapper {
+  margin-bottom: 30px;
+  width: 50%;
+
+  &__title {
+    font-family: $font-primary-bold;
+    font-size: $font-size-md;
+  }
+  &--fluid {
+    width: 100%;
+  }
+
+  .error {
+    color: $warning-color;
+  }
+
+}

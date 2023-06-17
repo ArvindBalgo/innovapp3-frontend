@@ -1,0 +1,667 @@
+{
+  "signupUsers": [
+    {
+      "firstName": "rishi",
+      "lastName": "rishi",
+      "userName": "rishi",
+      "password": "rishi",
+      "email": "rishi@gmail.com",
+      "phone": "51234567",
+      "userType": "Client",
+      "id": 1
+    },
+    {
+      "firstName": "poove",
+      "lastName": "poove",
+      "userName": "poove",
+      "password": "poove",
+      "email": "poove@gmail.com",
+      "phone": "51234567",
+      "userType": "Merchant",
+      "id": 2
+    },
+    {
+      "firstName": "admin",
+      "lastName": "admin",
+      "userName": "admin",
+      "password": "admin",
+      "email": "admin@gmail.com",
+      "phone": "51234567",
+      "userType": "Merchant",
+      "id": 3
+    }
+  ],
+  "merchants": [
+    {
+      "tag": "Florist",
+      "title": "Natasha Flowers Corner",
+      "address": "Plaine Magnien",
+      "telephone": "57777777",
+      "website": "https://www.flowers.com/",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "rating": "3"
+    },
+    {
+      "tag": "Florist",
+      "title": "Natasha Flowers Corner ",
+      "address": "Plaine Magnien",
+      "telephone": "MRU",
+      "website": "https://www.netflix.com/",
+      "profileImg": "./assets/images/messages/client-2.png",
+      "rating": "3"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Blooming Buds",
+      "address": "Port Louis",
+      "telephone": "MRU",
+      "website": "https://www.bbc.co.uk/",
+      "profileImg": "./assets/images/messages/client-3.png",
+      "rating": "4"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Petals and Posies",
+      "address": "Grand Baie",
+      "telephone": "MRU",
+      "website": "https://www.amazon.com/",
+      "profileImg": "./assets/images/messages/client-2.png",
+      "rating": "4.5"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Blossom Paradise",
+      "address": "Flic en Flac",
+      "telephone": "MRU",
+      "website": "https://www.spotify.com/",
+      "profileImg": "./assets/images/messages/client-3.png",
+      "rating": "3.8"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Rose Garden",
+      "address": "Curepipe",
+      "telephone": "MRU",
+      "website": "https://www.reddit.com/",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "rating": "4.2"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Evergreen Florals",
+      "address": "Quatre Bornes",
+      "telephone": "MRU",
+      "website": "https://www.instagram.com/",
+      "profileImg": "./assets/images/messages/client-3.png",
+      "rating": "4.7"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Tropical Blooms",
+      "address": "Black River",
+      "telephone": "MRU",
+      "website": "https://www.airbnb.com/",
+      "profileImg": "./assets/images/messages/client-2.png",
+      "rating": "4.3"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Gardenia Flowers",
+      "address": "Tamarin",
+      "telephone": "MRU",
+      "website": "https://www.pexels.com/",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "rating": "4.1"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Daisy Dreams",
+      "address": "Bel Air",
+      "telephone": "MRU",
+      "website": "https://www.github.com/",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "rating": "3.9"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Sunflower Shop",
+      "address": "Grand Gaube",
+      "telephone": "MRU",
+      "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "rating": "4.4"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Lily Lane",
+      "address": "Mahebourg",
+      "telephone": "MRU",
+      "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "rating": "4.6"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Orchid Oasis",
+      "address": "Le Morne",
+      "telephone": "MRU",
+      "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "rating": "4.2"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Marigold Blooms",
+      "address": "Rivière Noire",
+      "telephone": "MRU",
+      "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "rating": "4.3"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Tulip Treasures",
+      "address": "Pamplemousses",
+      "telephone": "MRU",
+      "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "rating": "4.0"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Iris Garden",
+      "address": "Trou aux Biches",
+      "telephone": "MRU",
+      "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "rating": "3.8"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Poppy Petals",
+      "address": "Grand Port",
+      "telephone": "MRU",
+      "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "rating": "4.5"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Carnation Corner",
+      "address": "Rivière du Rempart",
+      "telephone": "MRU",
+      "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "rating": "3.7"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Violet Valley",
+      "address": "Flacq",
+      "telephone": "MRU",
+      "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "rating": "4.1"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Daffodil Delights",
+      "address": "Goodlands",
+      "telephone": "MRU",
+      "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "rating": "3.9"
+    },
+
+    {
+      "tag": "Florist",
+      "title": "Cherry Blossom",
+      "address": "Bambous",
+      "telephone": "MRU",
+      "website": "MRU",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "rating": "4.3"
+    }
+  ],
+  "projects": [
+    {
+      "descriptions": "Indian wedding for 350 people (3 days) ",
+      "deadline": "20/03/2023",
+      "budget": "13,330,000 MUR",
+      "bidders": "10",
+      "status": 1
+    },
+    {
+      "descriptions": "Product training workshop for 50 people (2 days)",
+      "deadline": "22/08/2023",
+      "budget": "2,500,000 MUR",
+      "bidders": "3",
+      "status": 1
+    },
+    {
+      "descriptions": "Award ceremony for 400 people (1 day)",
+      "deadline": "18/07/2023",
+      "budget": "15,000,000 MUR",
+      "bidders": "9",
+      "status": 1
+    },
+    {
+      "descriptions": "Fashion show for 200 people (1 day)",
+      "deadline": "02/11/2023",
+      "budget": "9,000,000 MUR",
+      "bidders": "6",
+      "status": 2
+    },
+    {
+      "descriptions": "Team building event for 80 people (1 day)",
+      "deadline": "08/04/2023",
+      "budget": "3,500,000 MUR",
+      "bidders": "2",
+      "status": 2
+    },
+    {
+      "descriptions": "Charity gala for 150 people (1 day)",
+      "deadline": "15/09/2023",
+      "budget": "6,000,000 MUR",
+      "bidders": "4",
+      "status": 2
+    },
+    {
+      "descriptions": "Product launch event for 300 people (2 days)",
+      "deadline": "25/06/2023",
+      "budget": "12,000,000 MUR",
+      "bidders": "7",
+      "status": 2
+    },
+    {
+      "descriptions": "Anniversary celebration for 100 people (1 day)",
+      "deadline": "10/07/2023",
+      "budget": "4,500,000 MUR",
+      "bidders": "5",
+      "status": 2
+    },
+    {
+      "descriptions": "Birthday party for 50 people (1 day)",
+      "deadline": "05/08/2023",
+      "budget": "2,000,000 MUR",
+      "bidders": "3",
+      "status": 3
+    },
+    {
+      "descriptions": "Corporate retreat for 200 people (2 days)",
+      "deadline": "12/05/2023",
+      "budget": "8,500,000 MUR",
+      "bidders": "6",
+      "status": 3
+    }
+  ],
+  "messages": [
+    {
+      "tag": "Florist",
+      "title": "Natasha Flowers Corner",
+      "project_desc": "Indian Marriage for 330 people",
+      "date": "02/03/23",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "isNew": true,
+      "chats": [
+        {
+          "project_desc": "Indian Marriage for 330 people",
+          "title": "Natasha Flowers Corner",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Hello, how could i help",
+          "date": "20/03/24"
+        },
+        {
+          "project_desc": "Indian Marriage for 330 people",
+          "title": "Me",
+          "profileImg": "./assets/images/messages/client-2.png",
+          "desc": "I need 30 flowers urgent please",
+          "date": "20/03/24"
+        },
+        {
+          "project_desc": "Indian Marriage for 330 people",
+          "title": "Natasha Flowers Corner",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "By when you need them please",
+          "date": "20/03/24"
+        }
+      ]
+    },
+    {
+      "tag": "Electronics",
+      "title": "Quantum Communicator",
+      "project_desc": "Cutting-edge device for instant communication",
+      "date": "06/16/23",
+      "profileImg": "./assets/images/messages/client-2.png",
+      "isNew": true,
+      "chats": [
+        {
+          "project_desc": "Cutting-edge device for instant communication",
+          "title": "Quantum Communicator Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Hello, how can I assist you today?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Cutting-edge device for instant communication",
+          "title": "Customer",
+          "profileImg": "./assets/images/messages/client-2.png",
+          "desc": "I'm interested in the Quantum Communicator. Can you provide more details?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Cutting-edge device for instant communication",
+          "title": "Quantum Communicator Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Certainly! The Quantum Communicator is a cutting-edge device",
+          "date": "06/16/23"
+        }
+      ]
+    },
+    {
+      "tag": "Fashion",
+      "title": "Elegant Timepiece",
+      "project_desc": "Luxurious watch for sophisticated individuals",
+      "date": "06/16/23",
+      "profileImg": "./assets/images/messages/client-3.png",
+      "isNew": true,
+      "chats": [
+        {
+          "project_desc": "Luxurious watch for sophisticated individuals",
+          "title": "Elegant Timepiece Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Hello, how can I assist you today?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Luxurious watch for sophisticated individuals",
+          "title": "Customer",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "I'm interested in the Elegant Timepiece. Can you provide more details?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Luxurious watch for sophisticated individuals",
+          "title": "Elegant Timepiece Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Certainly! The Elegant Timepiece is a luxurious watc",
+          "date": "06/16/23"
+        }
+      ]
+    },
+    {
+      "tag": "Home Decor",
+      "title": "Zen Garden Set",
+      "project_desc": "Create a peaceful oasis in your home",
+      "date": "06/16/23",
+      "profileImg": "./assets/images/messages/client-1.png",
+      "isNew": false,
+      "chats": [
+        {
+          "project_desc": "Create a peaceful oasis in your home",
+          "title": "Zen Garden Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Hello, how can I assist you today?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Create a peaceful oasis in your home",
+          "title": "Customer",
+          "profileImg": "./assets/images/messages/client-2.png",
+          "desc": "I'm interested in the Zen Garden Set.",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Create a peaceful oasis in your home",
+          "title": "Zen Garden Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Absolutely! The Zen Garden Set",
+          "date": "06/16/23"
+        }
+      ]
+    },
+    {
+      "tag": "Fitness",
+      "title": "Smart Fitness Tracker",
+      "project_desc": "Track your health and reach your fitness goals",
+      "date": "06/16/23",
+      "profileImg": "./assets/images/messages/client-2.png",
+      "isNew": false,
+      "chats": [
+        {
+          "project_desc": "Track your health and reach your fitness goals",
+          "title": "Fitness Tracker Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Hello, how can I assist you today?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Track your health and reach your fitness goals",
+          "title": "Customer",
+          "profileImg": "./assets/images/messages/client-2.png",
+          "desc": "I'm interested in the Smart Fitness Tracker. Can you provide more details?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Track your health and reach your fitness goals",
+          "title": "Fitness Tracker Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Certainly! The Smart Fitness Tracker is a high-tech device.",
+          "date": "06/16/23"
+        }
+      ]
+    },
+    {
+      "tag": "Travel",
+      "title": "Adventure Backpack",
+      "project_desc": "Your perfect companion for outdoor exploration",
+      "date": "06/16/23",
+      "profileImg": "./assets/images/messages/client-3.png",
+      "isNew": false,
+      "chats": [
+        {
+          "project_desc": "Your perfect companion for outdoor exploration",
+          "title": "Adventure Backpack Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Hello, how can I assist you today?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Your perfect companion for outdoor exploration",
+          "title": "Customer",
+          "profileImg": "./assets/images/messages/client-2.png",
+          "desc": "I'm interested in the Adventure Backpack. Can you provide more details?",
+          "date": "06/16/23"
+        },
+        {
+          "project_desc": "Your perfect companion for outdoor exploration",
+          "title": "Adventure Backpack Support",
+          "profileImg": "./assets/images/messages/client-1.png",
+          "desc": "Absolutely! The Adventure Backpack is designed to be your perfect companion for outdoor exploration. It offers ample storage space, durable construction, and ergonomic design for maximum comfort.",
+          "date": "06/16/23"
+        }
+      ]
+    }
+  ],
+  "jobs": [{
+    "description": "Corporate event for 100 people",
+    "client": "ABC Corporation",
+    "budget": "2,500,000 MUR",
+    "deadline": "12/31/2023",
+    "status": 1
+  },
+
+    {
+      "description": "Wedding reception for 250 guests",
+      "client": "John and Emily Smith",
+      "budget": "4,000,000 MUR",
+      "deadline": "09/15/2023",
+      "status": 2
+    },
+
+    {
+      "description": "Private party for 50 people",
+      "client": "Sarah Johnson",
+      "budget": "800,000 MUR",
+      "deadline": "11/30/2023",
+      "status": 1
+    },
+
+    {
+      "description": "Conference for 500 attendees (3 days)",
+      "client": "TechCon",
+      "budget": "6,000,000 MUR",
+      "deadline": "04/30/2023",
+      "status": 2
+    },
+
+    {
+      "description": "Charity gala dinner for 200 guests",
+      "client": "Hope Foundation",
+      "budget": "1,200,000 MUR",
+      "deadline": "08/20/2023",
+      "status": 1
+    },
+
+    {
+      "description": "Product launch event for 100 people",
+      "client": "XYZ Corporation",
+      "budget": "3,500,000 MUR",
+      "deadline": "07/15/2023",
+      "status": 2
+    },
+
+    {
+      "description": "Holiday banquet for 80 guests",
+      "client": "Johnson & Co.",
+      "budget": "900,000 MUR",
+      "deadline": "12/25/2023",
+      "status": 1
+    },
+
+    {
+      "description": "Business networking event for 200 attendees",
+      "client": "Global Connect",
+      "budget": "2,200,000 MUR",
+      "deadline": "10/10/2023",
+      "status": 2
+    },
+
+    {
+      "description": "Team building retreat for 50 participants (2 days)",
+      "client": "Adventure Co.",
+      "budget": "1,500,000 MUR",
+      "deadline": "03/31/2023",
+      "status": 1
+    },
+
+    {
+      "description": "Anniversary celebration for 75 guests",
+      "client": "Smith Family",
+      "budget": "1,000,000 MUR",
+      "deadline": "07/31/2023",
+      "status": 2
+    }
+
+
+  ],
+  "clients": [{
+    "description": "Corporate event for 100 people",
+    "client": "ABC Corporation",
+    "budget": "2,500,000 MUR",
+    "deadline": "12/31/2023",
+    "status": 1
+    },
+
+    {
+      "description": "Wedding reception for 250 guests",
+      "client": "John and Emily Smith",
+      "budget": "4,000,000 MUR",
+      "deadline": "09/15/2023",
+      "status": 2
+    },
+
+    {
+      "description": "Private party for 50 people",
+      "client": "Sarah Johnson",
+      "budget": "800,000 MUR",
+      "deadline": "11/30/2023",
+      "status": 1
+    },
+
+    {
+      "description": "Conference for 500 attendees (3 days)",
+      "client": "TechCon",
+      "budget": "6,000,000 MUR",
+      "deadline": "04/30/2023",
+      "status": 2
+    },
+
+    {
+      "description": "Charity gala dinner for 200 guests",
+      "client": "Hope Foundation",
+      "budget": "1,200,000 MUR",
+      "deadline": "08/20/2023",
+      "status": 1
+    },
+
+    {
+      "description": "Product launch event for 100 people",
+      "client": "XYZ Corporation",
+      "budget": "3,500,000 MUR",
+      "deadline": "07/15/2023",
+      "status": 2
+    },
+
+    {
+      "description": "Holiday banquet for 80 guests",
+      "client": "Johnson & Co.",
+      "budget": "900,000 MUR",
+      "deadline": "12/25/2023",
+      "status": 1
+    },
+
+    {
+      "description": "Business networking event for 200 attendees",
+      "client": "Global Connect",
+      "budget": "2,200,000 MUR",
+      "deadline": "10/10/2023",
+      "status": 2
+    },
+
+    {
+      "description": "Team building retreat for 50 participants (2 days)",
+      "client": "Adventure Co.",
+      "budget": "1,500,000 MUR",
+      "deadline": "03/31/2023",
+      "status": 1
+    },
+
+    {
+      "description": "Anniversary celebration for 75 guests",
+      "client": "Smith Family",
+      "budget": "1,000,000 MUR",
+      "deadline": "07/31/2023",
+      "status": 2
+    }
+  ]
+
+}
