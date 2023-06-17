@@ -28,3 +28,16 @@ $desktop: "only screen and (min-width: #{$breakpoint-mobile})";
 //@media #{$mobile} {
 //  max-width: 100% !important;
 //}
+
+.desktop {
+  @media #{$mobile} {
+    display: none !important;
+  }
+}
+
+.mobile {
+  @media #{$desktop} {
+    display: none !important;
+  }
+}
+

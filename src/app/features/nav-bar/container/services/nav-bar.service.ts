@@ -13,7 +13,6 @@ export class NavBarService {
   get sideBarState$(): Observable<boolean> {
     return this._isSideBarOpen$
       .asObservable()
-      .pipe(filter((isOpen) => !!isOpen));
   }
 
   set sideBarState(flag: boolean) {

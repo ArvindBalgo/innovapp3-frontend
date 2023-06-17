@@ -4,15 +4,15 @@ export const animateSideMenu = trigger('animateSideMenu', [
   state(
     'scrollLeft',
     style({
-      transform: 'translateX(-10%)',
-      // opacity: 1
+      transform: 'translateX(0%)',
+      opacity: 1
     })
   ),
   state(
     'scrollRight',
     style({
-      transform: 'translateX(-50%)',
-      // opacity: 0
+      transform: 'translateX(-100%)',
+      opacity: 0
     })
   ),
 
