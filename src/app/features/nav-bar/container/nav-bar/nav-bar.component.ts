@@ -73,4 +73,9 @@ export class NavBarComponent implements OnInit, OnDestroy {
       this.sideBarState = response;
     })
   }
+
+  public closeMenu() {
+    this._navBarService.sideBarState = false;
+  }
+
 }

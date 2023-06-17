@@ -37,6 +37,8 @@ export class CreateProjectComponent implements OnInit {
         });
       })
     });
+
+    event.preventDefault();
   }
 
   setUpCreateForm() {
@@ -61,7 +63,6 @@ export class CreateProjectComponent implements OnInit {
     console.log(this.projectList.filter(item => item.checked))
 
   }
-
 
   toggleProject(project: {label: string; checked: boolean, index: number}) {
     this.projectList[project.index].checked = !this.projectList[project.index].checked;

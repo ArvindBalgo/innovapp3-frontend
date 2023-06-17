@@ -64,7 +64,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   public openSideMenu() {
     this.isSideBarOpen = !this.isSideBarOpen;
-    this._navBarService.sideBarState = this.isSideBarOpen;
+    this._navBarService.sideBarState = !!this.isSideBarOpen;
   }
 
 }
