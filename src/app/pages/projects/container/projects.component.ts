@@ -248,7 +248,6 @@ export class ProjectsComponent implements OnInit {
 
 
     this._httpClient.get(`${this.URL_BACKEND}api/quotes`).subscribe((response: any) => {
-      console.log(response.data, 'RESPONSE DATA');
       response.data.forEach((project: any) => {
         this.list.push({
           descriptions: project.title,

@@ -1,4 +1,16 @@
-<nav class="navigation">
+<div class="desktop">
+  <nav class="navigation">
+    <ng-container *ngTemplateOutlet="navigation"></ng-container>
+  </nav>
+</div>
+
+<div class="mobile">
+  <nav class="navigation" [@animateSideMenu]="sideBarState ? 'scrollLeft' : 'scrollRight'">
+    <ng-container *ngTemplateOutlet="navigation"></ng-container>
+  </nav>
+</div>
+
+<ng-template #navigation>
   <div class="first-section">
     <div class="logo">
       <img src="../../../../../assets/images/logo.png" alt=""/>
@@ -6,27 +18,27 @@
     <div class="menu-item">
       <ul>
         <li class="menu-item__list">
-          <a href="" routerLink="jobs" routerLinkActive="menu-item__list__active" class="nav-btn">
+          <a href="" routerLink="jobs" (click)="closeMenu()" routerLinkActive="menu-item__list__active" class="nav-btn">
             <i class="material-icons">format_list_bulleted</i> List of Jobs
           </a>
         </li>
         <li class="menu-item__list">
-          <a href="" routerLink="clients" routerLinkActive="menu-item__list__active" class="nav-btn">
+          <a href="" routerLink="clients" (click)="closeMenu()" routerLinkActive="menu-item__list__active" class="nav-btn">
             <i class="material-icons">format_list_bulleted</i> Clients Jobs
           </a>
         </li>
         <li class="menu-item__list">
-          <a href="" routerLink="merchants" routerLinkActive="menu-item__list__active" class="nav-btn">
+          <a href="" routerLink="merchants" (click)="closeMenu()" routerLinkActive="menu-item__list__active" class="nav-btn">
             <i class="material-icons">commute</i> Merchant List
           </a>
         </li>
         <li class="menu-item__list">
-          <a href="" routerLink="reservations" routerLinkActive="menu-item__list__active" class="nav-btn">
+          <a href="" routerLink="reservations" (click)="closeMenu()" routerLinkActive="menu-item__list__active" class="nav-btn">
             <i class="material-icons">message</i> My messages
           </a>
         </li>
         <li class="menu-item__list">
-          <a href="" routerLink="reservations" routerLinkActive="menu-item__list__active" class="nav-btn">
+          <a href="" routerLink="reservations" (click)="closeMenu()" routerLinkActive="menu-item__list__active" class="nav-btn">
             <i class="material-icons">add_box</i> New Project
           </a>
         </li>
@@ -54,4 +66,4 @@
       </button>
     </div>
   </div>
-</nav>
+</ng-template>
