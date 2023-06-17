@@ -60,8 +60,17 @@ export class CreateProjectComponent implements OnInit {
   onRequestQuote() {
 
     console.log('this.createForm.value', this.createForm.value);
-    console.log(this.projectList.filter(item => item.checked))
-
+    console.log(this.projectList.filter(item => item.checked));
+    const filteredList = this.projectList.filter(item => item.checked).map(item => `<ai-info>${item.label}</ai-info>`);
+    const specificDescription = this.createForm.value.description;
+    const payload = {
+      customer_id: 2,
+      description: filteredList.join('') + `<perso-info>${specificDescription}</perso-info>`,
+      budjet: this.createForm.value.budget,
+      is_anonym: 1,
+      is_ai: 1
+    }
+    console.log(payload)
   }
 
   toggleProject(project: {label: string; checked: boolean, index: number}) {
