@@ -1,25 +1,30 @@
 
 <h2 class="mq-title-h2">
-  pose moi question
+  Ask me
 </h2>
 
 <div class="question-container">
-  <div class="question-wrapper">
-    <ul>
-      <li>
-        what is my is name
-      </li>
-      <li>
-        mo apel en nom
-      </li>
-    </ul>
+
+  <div class="question-wrap">
+    <div class="question-wrapper">
+      <ul>
+        <li *ngFor="let questionsList of questionsList" [ngClass]="{ 'response':  (questionsList.initiator === 'ME')}" >
+          <span *ngIf="questionsList.initiator === 'ME'"><img src="./assets/images/header/chat.png" alt=""/></span>
+          <span *ngIf="questionsList.initiator === 'AI'"><img src="./assets/images/header/settings.png" alt=""/></span>
+          {{ questionsList.Message }}
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="question-input">
+      <mat-form-field appearance="outline">
+        <mat-label>Write a message</mat-label>
+        <input matInput type="text" autocomplete="off"/>
+      </mat-form-field>
+    </div>
   </div>
-  <div class="question-input">
-    <mat-form-field appearance="outline">
-      <mat-label>Write a message</mat-label>
-      <input matInput type="text" autocomplete="off"/>
-    </mat-form-field>
-  </div>
+
 </div>
 
 

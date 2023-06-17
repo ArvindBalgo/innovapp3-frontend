@@ -9,7 +9,28 @@ export class QuestionAndAnswerComponent implements OnInit {
 
   public merchants: any;
 
-
+  public questionsList = [
+    {
+      initiator: 'ME',
+      Message: 'What is the capital of Mauritius?',
+      date: new Date()
+    },
+    {
+      initiator: 'AI',
+      Message: 'Port Louis is the capital of Mauritius?',
+      date: new Date()
+    },
+    {
+      initiator: 'ME',
+      Message: 'Thanks, what is the capital of Rodrigues?',
+      date: new Date()
+    },
+    {
+      initiator: 'AI',
+      Message: 'Port Mathurin',
+      date: new Date()
+    }
+  ];
 
   constructor(
     private _httpClient: HttpClient
