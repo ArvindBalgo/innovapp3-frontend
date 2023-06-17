@@ -8,6 +8,8 @@ import {HttpClient} from "@angular/common/http";
 export class ProjectsComponent implements OnInit {
 
   public projects: any;
+  public list: any = [];
+  private URL_BACKEND = 'https://mauriquotes-backend.herokuapp.com/';
 
   constructor(
     private _httpClient: HttpClient
@@ -16,6 +18,21 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
     this._httpClient.get('/api/projects').subscribe((response: any) => {
       this.projects = response;
+    })
+
+    this._httpClient.get(`${this.URL_BACKEND}api/quotes`).subscribe((response: any) => {
+      console.log(response.data, 'RESPONSE DATA');
+      response.data.forEach((project: any) => {
+        this.list.push({
+          descriptions: project.description,
+          deadline: "20/03/2023",
+          budget: project.budjet,
+          bidders: "10",
+          status: 1
+        })
+      })
+
+      console.log(this.list)
     })
   }
 
