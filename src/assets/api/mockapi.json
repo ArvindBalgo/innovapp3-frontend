@@ -582,5 +582,86 @@
     }
 
 
+  ],
+  "clients": [{
+    "description": "Corporate event for 100 people",
+    "client": "ABC Corporation",
+    "budget": "2,500,000 MUR",
+    "deadline": "12/31/2023",
+    "status": 1
+    },
+
+    {
+      "description": "Wedding reception for 250 guests",
+      "client": "John and Emily Smith",
+      "budget": "4,000,000 MUR",
+      "deadline": "09/15/2023",
+      "status": 2
+    },
+
+    {
+      "description": "Private party for 50 people",
+      "client": "Sarah Johnson",
+      "budget": "800,000 MUR",
+      "deadline": "11/30/2023",
+      "status": 1
+    },
+
+    {
+      "description": "Conference for 500 attendees (3 days)",
+      "client": "TechCon",
+      "budget": "6,000,000 MUR",
+      "deadline": "04/30/2023",
+      "status": 2
+    },
+
+    {
+      "description": "Charity gala dinner for 200 guests",
+      "client": "Hope Foundation",
+      "budget": "1,200,000 MUR",
+      "deadline": "08/20/2023",
+      "status": 1
+    },
+
+    {
+      "description": "Product launch event for 100 people",
+      "client": "XYZ Corporation",
+      "budget": "3,500,000 MUR",
+      "deadline": "07/15/2023",
+      "status": 2
+    },
+
+    {
+      "description": "Holiday banquet for 80 guests",
+      "client": "Johnson & Co.",
+      "budget": "900,000 MUR",
+      "deadline": "12/25/2023",
+      "status": 1
+    },
+
+    {
+      "description": "Business networking event for 200 attendees",
+      "client": "Global Connect",
+      "budget": "2,200,000 MUR",
+      "deadline": "10/10/2023",
+      "status": 2
+    },
+
+    {
+      "description": "Team building retreat for 50 participants (2 days)",
+      "client": "Adventure Co.",
+      "budget": "1,500,000 MUR",
+      "deadline": "03/31/2023",
+      "status": 1
+    },
+
+    {
+      "description": "Anniversary celebration for 75 guests",
+      "client": "Smith Family",
+      "budget": "1,000,000 MUR",
+      "deadline": "07/31/2023",
+      "status": 2
+    }
   ]
+
 }
