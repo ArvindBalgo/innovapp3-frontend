@@ -4,7 +4,7 @@
 
 <!--    dropdown here-->
   </div>
-
+  <div style="padding: 15px !important;" *ngIf="list?.length > 0" [innerHTML]="list[0]['eligibility']"> </div>
   <div class="project-titles">
     <ul class="list-item">
       <li>Project Description</li>
@@ -17,22 +17,57 @@
   </div>
 
   <div class="project-items">
+
     <ul class="project-items__ul">
       <li *ngFor="let project of list" class="project-items__list">
-        <ul class="list-item list-item-projects">
-          <li>{{ project.descriptions }}</li>
-          <li>{{ project.deadline }}</li>
-          <li>{{ project.budget }}</li>
-          <li><span class="bidders" style="margin-left: 1px"> {{ project.bidders }}</span></li>
+
+        <ul class="list-item list-item-projects desktop">
+          <li>{{ project.descriptions ? project.descriptions : 'wedding plan' }}</li>
+          <li>{{ project.deadline ? project.deadline : '2023-06-18' }}</li>
+          <li>{{ project.budget ? project.budget : '50000' }}</li>
+          <li><span class="bidders" style="margin-left: 1px">{{randomBids()}}</span></li>
           <li ngClass="{{'status-' + project.status}}"><span class="status">{{ getStatus(project.status) }} {{project.status}}</span></li>
           <li class="button-container">
             <button>
               <img src="./assets/images/projects/trash.png" alt=""/>
             </button>
-            <button>
+            <button (click)="goToProjectDetails()">
               <img src="./assets/images/projects/eye.png" alt=""/>
             </button>
           </li>
+        </ul>
+
+        <ul class="list-item-projects-mobile mobile">
+
+              <li>
+                <h3>
+                  {{ project.descriptions }}
+                </h3>
+
+                <div class="mobile-container">
+                  <div class="mobile-desc">
+                    <p><span>Deadline:</span> {{ project.deadline }}</p>
+                    <p><span>Budget:</span> {{ project.budget }}</p>
+                    <p><span>Bidders:</span> {{ project.bidders }}</p>
+                  </div>
+
+                  <div class="cta-container">
+                    <span ngClass="{{'status-' + project.status}}" class="status-wrapper">
+                      <span class="status">{{ getStatus(project.status) }}</span>
+                    </span>
+                    <div class="btn-container">
+                      <button>
+                        <img src="./assets/images/projects/trash.png" alt=""/>
+                      </button>
+                      <button (click)="goToProjectDetails()">
+                        <img src="./assets/images/projects/eye.png" alt=""/>
+                      </button>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
         </ul>
       </li>
 

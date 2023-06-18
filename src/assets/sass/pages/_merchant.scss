@@ -20,6 +20,13 @@
         margin-left: 2.5%;
         padding: 20px;
 
+        @media #{$mobile} {
+          width: 100%;
+          margin-right: 0%;
+          margin-left: 0%;
+          margin-bottom: 8% !important;
+        }
+
         &:nth-child(3n + 0) {
           margin-right: 0;
         }

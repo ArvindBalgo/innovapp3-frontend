@@ -1,9 +1,9 @@
 <div id="login" class="form-wrapper" novalidate>
   <div class="log">
-    <img src="../../../../../assets/images/logo.png" alt=""/>
+    <img src="../../../../../assets/images/logo_dark.svg" alt=""/>
   </div>
   <div class="welcome">
-    <p class="text">Welcome Back!</p>
+    <p class="text">Welcome Back !</p>
     <p class="details">Please enter your details</p>
   </div>
 
@@ -11,7 +11,7 @@
   <form [formGroup]="loginForm">
     <div class="inputs">
     <div class="input-wrapper">
-      <mat-form-field [ngClass]="{'input-error': (isSubmitted && loginForm.get('userName')?.invalid)}" appearance="fill">
+      <mat-form-field [ngClass]="{'input-error': (isSubmitted && loginForm.get('userName')?.invalid)}" appearance="outline">
         <mat-label>User name</mat-label>
         <input autocomplete="off" formControlName="userName" matInput type="text" class="fields" placeholder="Email">
       </mat-form-field>
@@ -19,7 +19,7 @@
     </div>
 
     <div class="input-wrapper">
-      <mat-form-field [ngClass]="{'input-error': (isSubmitted && loginForm.get('password')?.invalid)}" appearance="fill">
+      <mat-form-field [ngClass]="{'input-error': (isSubmitted && loginForm.get('password')?.invalid)}" appearance="outline">
         <mat-label>Password</mat-label>
         <input autocomplete formControlName="password" matInput type="password" />
       </mat-form-field>
@@ -31,7 +31,6 @@
 
     <div class="form-wrapper__cta">
       <button (click)="onLogin()" class="btn btn--primary" type="button">Login</button>
-      <button class="btn btn--secondary" type="button">Forgot Password</button> <!-- Add the "Forgot Password" button -->
     </div>
 </div>
     <a class="welcome form-wrapper__link" href="" routerLink="/account/signup">Don't have an account? Register</a>

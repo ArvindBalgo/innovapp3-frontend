@@ -45,7 +45,7 @@
           <div class="input-item-response">
             <div>
               <mat-form-field appearance="outline">
-                <mat-label>Enter project details and let our AI work for you</mat-label>
+                <mat-label>Enter project details...</mat-label>
                 <input (keydown.enter)="getItems($event)" matInput type="text" formControlName="description" />
                 <button matSuffix mat-icon-button aria-label="Clear" (click)="clearDescription()">
                   <mat-icon>close</mat-icon>
@@ -55,15 +55,20 @@
             <div class="input-item-response-inner">
               <div>
                 <ul>
-                    <li *ngFor="let project of projectList;">
-                      <mat-checkbox [checked]="project.checked" (change)="toggleProject(project)">{{ project.label }}</mat-checkbox>
-                    </li>
+                  <li *ngFor="let project of projectList;">
+                    <mat-checkbox [checked]="project.checked" (change)="toggleProject(project)">{{ project.label }}</mat-checkbox>
+                  </li>
 
                 </ul>
               </div>
             </div>
 
+            <div class="loader-container" *ngIf="isLoading">
+              <span class="loader"></span>
+            </div>
+
           </div>
+
           <div class="input-item">
 
             <div class="input-item-wrapper input-item-wrapper--fluid">

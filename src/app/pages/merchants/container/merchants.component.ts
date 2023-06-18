@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-merchants',
@@ -13,17 +14,16 @@ export class MerchantsComponent implements OnInit {
 
 
   constructor(
-    private _httpClient: HttpClient
+    private _httpClient: HttpClient,
+    private _router: Router
   ) { }
 
   ngOnInit(): void {
     this._httpClient.get('/api/merchants').subscribe((response: any) => {
       this.merchants = response;
-      // console.log('this.merchants', this.merchants);
     });
 
-    this._httpClient.get(`${this.URL_BACKEND}api/merchant`).subscribe((response: any) => {
-      console.log(response.data, 'RESPONSE DATA');
+    this._httpClient.get(`${this.URL_BACKEND}api/merchants`).subscribe((response: any) => {
       response.data.forEach((project: any) => {
         this.list.push({
           id: project.id,
@@ -36,10 +36,12 @@ export class MerchantsComponent implements OnInit {
           contact_number: project.contact_number
         })
       })
-
-      console.log(this.list)
     })
 
+  }
+
+  goToMerchant(merchantId: any) {
+    this._router.navigate(['/merchants/profile']);
   }
 
 }

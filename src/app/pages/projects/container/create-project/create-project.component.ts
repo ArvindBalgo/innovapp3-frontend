@@ -9,6 +9,8 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 })
 export class CreateProjectComponent implements OnInit {
 
+  public isLoading = false;
+
   public createForm: FormGroup;
   public projectList:  Array<{index: number;label: string; checked: boolean}> = [];
   private URL_BACKEND = 'https://mauriquotes-backend.herokuapp.com/';
@@ -29,7 +31,11 @@ export class CreateProjectComponent implements OnInit {
 
   getItems(event: any) {
     const textValue = event.target.value;
+    this.isLoading = true;
     this._httpClient.post('https://mauriquotes-ai.herokuapp.com/ai/task-list' , {query: textValue} ).subscribe((response: any) => {
+      if (response) {
+        this.isLoading = false;
+      }
       response.forEach((task: string, index: number) => {
         this.projectList.push({
           index,
@@ -38,6 +44,8 @@ export class CreateProjectComponent implements OnInit {
         });
       })
     });
+
+    event.preventDefault();
   }
 
   setUpCreateForm() {
@@ -53,13 +61,10 @@ export class CreateProjectComponent implements OnInit {
   clearDescription() {
     this.createForm.get('description')?.setValue('');
     this.projectList = [];
-
   }
 
   onRequestQuote() {
 
-    console.log('this.createForm.value', this.createForm.value);
-    console.log(this.projectList.filter(item => item.checked));
     const filteredList = this.projectList.filter(item => item.checked).map(item => `<ai-info>${item.label}</ai-info>`);
     const specificDescription = this.createForm.value.description;
     const payload = {
@@ -79,15 +84,12 @@ export class CreateProjectComponent implements OnInit {
     fm.append('is_ai', '1')
     fm.append('deadline', '22/02/2024');
     fm.append('title', this.createForm.value.title);
-    console.log(this.createForm.value)
 
 
     this._httpClient.post(`${this.URL_BACKEND}api/quotes`, fm).subscribe(info => {
-      console.log(info)
+      // console.log(info)
     })
-    console.log(payload)
   }
-
 
   toggleProject(project: {label: string; checked: boolean, index: number}) {
     this.projectList[project.index].checked = !this.projectList[project.index].checked;

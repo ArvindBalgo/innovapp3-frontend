@@ -11,6 +11,7 @@ import {AuthService} from "./features/authentication/auth.service";
 import {HttpClientModule} from "@angular/common/http";
 import {NavBarModule} from "./features/nav-bar/nav-bar.module";
 import {HeaderModule} from "./features/header/header.module";
+import {NavBarService} from "./features/nav-bar/container/services/nav-bar.service";
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import {HeaderModule} from "./features/header/header.module";
     AuthGuardService,
     AuthService,
     UserService,
+    NavBarService
   ],
   bootstrap: [AppComponent]
 })
