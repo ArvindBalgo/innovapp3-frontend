@@ -60,8 +60,14 @@ export class LoginComponent implements OnInit {
       } else {
         this._httpClient.post(`${this.URL_BACKEND}/auth/customer` , fm ).subscribe((response: any) => {
           console.log('response', response);
+          const userInfo = {
+            id: response.data.id,
+            firstName: response.data.name,
+            lastName: response.data.lastName,
+            userType: 'Client'
+          }
           this._router.navigate(['merchants']);
-          this._userService.setCurrentUserInfo(response.data.id);
+          this._userService.setCurrentUserInfo(userInfo);
           this.initiateEvent(response.data.id);
         });
       }
