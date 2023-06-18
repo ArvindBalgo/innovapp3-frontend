@@ -47,7 +47,7 @@
               <mat-form-field appearance="outline">
                 <mat-label>Enter project details...</mat-label>
                 <input (keydown.enter)="getItems($event)" matInput type="text" formControlName="description" />
-                <button matSuffix mat-icon-button aria-label="Clear" (click)="clearDescription()">
+                <button matSuffix mat-icon-button aria-label="Clear" (click)="clearDescription()" aria-label="close">
                   <mat-icon>close</mat-icon>
                 </button>
               </mat-form-field>
@@ -87,10 +87,10 @@
 
           <div class="input-item">
             <div class="input-item-wrapper input-item-wrapper__cta input-item-wrapper--fluid">
-              <button (click)="onRequestQuote()" class="btn btn--primary inverse" type="button">
+              <button (click)="onRequestQuote()" class="btn btn--primary inverse" type="button" aria-label="cancel">
                 Cancel
               </button>
-              <button (click)="onRequestQuote()" class="btn btn--primary" type="button">
+              <button (click)="onRequestQuote()" class="btn btn--primary" type="button" aria-label="request">
                 Request quote
               </button>
             </div>

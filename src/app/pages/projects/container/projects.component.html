@@ -27,10 +27,10 @@
           <li><span class="bidders" style="margin-left: 1px"> {{ project.bidders }}</span></li>
           <li ngClass="{{'status-' + project.status}}"><span class="status">{{ getStatus(project.status) }} {{project.status}}</span></li>
           <li class="button-container">
-            <button>
+            <button aria-label="delete">
               <img src="./assets/images/projects/trash.png" alt=""/>
             </button>
-            <button (click)="goToProjectDetails()">
+            <button (click)="goToProjectDetails()" aria-label="visible">
               <img src="./assets/images/projects/eye.png" alt=""/>
             </button>
           </li>
@@ -55,10 +55,10 @@
                       <span class="status">{{ getStatus(project.status) }}</span>
                     </span>
                     <div class="btn-container">
-                      <button>
+                      <button aria-label="delete">
                         <img src="./assets/images/projects/trash.png" alt=""/>
                       </button>
-                      <button (click)="goToProjectDetails()">
+                      <button (click)="goToProjectDetails()" aria-label="visible">
                         <img src="./assets/images/projects/eye.png" alt=""/>
                       </button>
                     </div>

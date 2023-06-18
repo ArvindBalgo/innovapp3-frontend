@@ -28,9 +28,10 @@
 
   <div class="header-container-mobile">
 
-      <button (click)="openSideMenu()">
+      <button (click)="openSideMenu()" aria-label="side_menu">
         <i *ngIf="!isSideBarOpen" class="material-icons">menu</i>
         <i *ngIf="isSideBarOpen" class="material-icons">close</i>
+
       </button>
       <div class="logo-container">
         <img src="./assets/images/logo.svg" alt=""/>
