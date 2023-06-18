@@ -39,16 +39,18 @@ export class AppComponent {
     const getUserToken = localStorage.getItem('token');
     if (getUserToken) {
       this._authService.logUserStatus(true);
-      this._userService.setCurrentUserInfo(parseInt(getUserToken))
+
+      const userInfo:any = localStorage.getItem('userInfo');
+
+      this._userService.setCurrentUserInfo(JSON.parse(userInfo))
+      console.log('userInfo -----', userInfo);
     }
   }
 
   private getUserInfo(): void {
     this._userService.currentUserInfo()
-      .pipe(
-        filter(response => !!response)
-      )
-      .subscribe((userInfo: UserModel) => {
+      .subscribe((userInfo: any) => {
+        console.log('userInfo', userInfo);
       this.userDetails = userInfo;
     })
   }
