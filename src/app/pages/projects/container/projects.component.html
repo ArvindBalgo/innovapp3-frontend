@@ -19,7 +19,8 @@
   <div class="project-items">
     <ul class="project-items__ul">
       <li *ngFor="let project of list" class="project-items__list">
-        <ul class="list-item list-item-projects">
+
+        <ul class="list-item list-item-projects desktop">
           <li>{{ project.descriptions }}</li>
           <li>{{ project.deadline }}</li>
           <li>{{ project.budget }}</li>
@@ -29,10 +30,43 @@
             <button>
               <img src="./assets/images/projects/trash.png" alt=""/>
             </button>
-            <button>
+            <button (click)="goToProjectDetails()">
               <img src="./assets/images/projects/eye.png" alt=""/>
             </button>
           </li>
+        </ul>
+
+        <ul class="list-item-projects-mobile mobile">
+
+              <li>
+                <h3>
+                  {{ project.descriptions }}
+                </h3>
+
+                <div class="mobile-container">
+                  <div class="mobile-desc">
+                    <p><span>Deadline:</span> {{ project.deadline }}</p>
+                    <p><span>Budget:</span> {{ project.budget }}</p>
+                    <p><span>Bidders:</span> {{ project.bidders }}</p>
+                  </div>
+
+                  <div class="cta-container">
+                    <span ngClass="{{'status-' + project.status}}" class="status-wrapper">
+                      <span class="status">{{ getStatus(project.status) }}</span>
+                    </span>
+                    <div class="btn-container">
+                      <button>
+                        <img src="./assets/images/projects/trash.png" alt=""/>
+                      </button>
+                      <button (click)="goToProjectDetails()">
+                        <img src="./assets/images/projects/eye.png" alt=""/>
+                      </button>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
         </ul>
       </li>
 

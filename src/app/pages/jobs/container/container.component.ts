@@ -16,6 +16,8 @@ export class ContainerComponent {
   ngOnInit(): void {
     this._httpClient.get('/api/jobs').subscribe((response: any) => {
       this.projects = response;
+
+      console.log('this.projects', this.projects);
     })
   }
 

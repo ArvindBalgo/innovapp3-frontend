@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {filter} from "rxjs";
 
 @Component({
   selector: 'app-merchant-profile',
@@ -9,6 +10,8 @@ import {HttpClient} from "@angular/common/http";
 export class MerchantProfileComponent implements OnInit{
   public imgUrl = '';
   private URL_BACKEND = 'https://mauriquotes-backend.herokuapp.com/';
+
+  public merchantInfo: any = [];
   constructor(private _httpClient: HttpClient) {
   }
   ngOnInit() {
@@ -143,7 +146,11 @@ export class MerchantProfileComponent implements OnInit{
     </g>
 </svg>`;
     const merchantId = 6;
-    this._httpClient.get(`${this.URL_BACKEND}api/merchants/${merchantId}`).subscribe((merchantInfo: any) => {
+    this._httpClient.get(`${this.URL_BACKEND}api/merchants/${merchantId}`)
+      .pipe(filter(response => !!response))
+      .subscribe((merchantInfo: any) => {
+      this.merchantInfo = merchantInfo.data;
+      console.log('this.merchantInfo', this.merchantInfo);
       const rating:any = parseFloat(merchantInfo.data.ratings).toFixed(1);
       const count = merchantInfo.data.reviews.length;
       svg = svg.replace('__NOTE__', rating);

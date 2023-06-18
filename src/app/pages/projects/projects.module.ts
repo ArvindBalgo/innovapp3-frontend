@@ -10,11 +10,13 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatIconModule} from "@angular/material/icon";
+import {ProjectDetailComponent} from "./container/project-detail/project-detail.component";
 
 @NgModule({
   declarations: [
     ProjectsComponent,
-    CreateProjectComponent
+    CreateProjectComponent,
+    ProjectDetailComponent
   ],
   imports: [
     CommonModule,

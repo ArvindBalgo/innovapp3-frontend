@@ -6,6 +6,11 @@
       font-size: 36px;
       color: #2E3243;
       margin-bottom: 30px;
+
+      @media #{$mobile} {
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -15,10 +20,13 @@
     align-items: center;
     background-color: #272932;
     border-radius: 4px;
+
+    @media #{$mobile} {
+      display: none;
+    }
   }
 
   .project-items {
-
     &__ul {
       margin-top: 25px;
       display: flex;
@@ -32,6 +40,10 @@
       display: flex;
       align-items: center;
       border-radius: 4px;
+
+      @media #{$mobile} {
+        height: unset;
+      }
     }
   }
 
@@ -58,6 +70,7 @@
         padding-left: 25px;
         text-align: left;
         justify-content: flex-start;
+
       }
 
       &:nth-child(2) {
@@ -140,5 +153,79 @@
       }
     }
 
+  }
+
+  .list-item-projects-mobile {
+      width: 100%;
+      li {
+        border-radius: 4px;
+        h3 {
+          border-top-left-radius: 4px;
+          border-top-right-radius: 4px;
+          background-color: #2E3243;
+          margin-bottom: 0 !important;
+          padding: 10px 20px;
+          color: #ffffff;
+        }
+
+        .mobile-container {
+          padding: 20px;
+
+
+          .mobile-desc {
+            border-bottom: 1px solid #DCDCDC;
+            padding-bottom: 15px;
+
+            p {
+              display: flex;
+              span {
+                display: block;
+                min-width: 80px;
+              }
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+
+          .cta-container {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+
+            .status  {
+              padding: 5px 10px;
+              border-radius: 4px;
+            }
+
+            .status-1 {
+
+              color: #0FA515;
+
+              span {
+                background-color: rgba(#0FA515, 0.1);
+              }
+            }
+
+            .status-2 {
+              color: #2072B7;
+
+              span {
+                background-color: rgba(#2072B7, 0.1);
+              }
+            }
+
+            .status-3 {
+              color: #BD0606;
+
+              span {
+                background-color: rgba(#BD0606, 0.1);
+              }
+            }
+          }
+        }
+
+      }
   }
 }

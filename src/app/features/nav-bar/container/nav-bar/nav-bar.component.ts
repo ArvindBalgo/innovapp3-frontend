@@ -2,15 +2,19 @@ import {AfterViewInit, Component, OnDestroy, OnInit} from '@angular/core';
 import {UserService} from "../../../../shared/services/user.service";
 import {Router} from "@angular/router";
 import {AuthService} from "../../../authentication/auth.service";
-import {Subscription} from "rxjs";
+import {filter, Subscription} from "rxjs";
 import {UserModel} from "../../../../pages/authentication/model/user.model";
+import {animateSideMenu} from "../../../../animations/animations";
+import {NavBarService} from "../services/nav-bar.service";
 
 @Component({
   selector: 'app-nav-bar',
-  templateUrl: './nav-bar.component.html'
+  templateUrl: './nav-bar.component.html',
+  animations: [animateSideMenu]
 })
 export class NavBarComponent implements OnInit, OnDestroy {
   public isUserLoggedIn = false;
+  public sideBarState = false;
   public userDetails: UserModel = {
     firstName: '',
     lastName: '',
@@ -28,7 +32,8 @@ export class NavBarComponent implements OnInit, OnDestroy {
   constructor(
     private _userService: UserService,
     private _router: Router,
-    private _authService: AuthService
+    private _authService: AuthService,
+    private _navBarService: NavBarService
   ) {
 
   }
@@ -36,6 +41,7 @@ export class NavBarComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.verifyUserStatus();
     this.getUserInfo();
+    this.getSideBarState();
   }
 
   ngOnDestroy() {
@@ -59,6 +65,17 @@ export class NavBarComponent implements OnInit, OnDestroy {
     localStorage.removeItem('token');
     this._authService.logUserStatus(false);
     this._router.navigate(['account/login']);
+  }
+
+  private getSideBarState() {
+    this._navBarService.sideBarState$
+      .subscribe((response) => {
+      this.sideBarState = response;
+    })
+  }
+
+  public closeMenu() {
+    this._navBarService.sideBarState = false;
   }
 
 }
