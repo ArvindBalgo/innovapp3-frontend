@@ -55,11 +55,10 @@ export class LoginComponent implements OnInit {
           }
           this._userService.setCurrentUserInfo(userInfo);
 
-          this.initiateEvent(response.data.id);
+          this.initiateEvent(response.data.id, userInfo);
         });
       } else {
         this._httpClient.post(`${this.URL_BACKEND}/auth/customer` , fm ).subscribe((response: any) => {
-          console.log('response', response);
           const userInfo = {
             id: response.data.id,
             firstName: response.data.name,
@@ -68,7 +67,7 @@ export class LoginComponent implements OnInit {
           }
           this._router.navigate(['merchants']);
           this._userService.setCurrentUserInfo(userInfo);
-          this.initiateEvent(response.data.id);
+          this.initiateEvent(response.data.id, userInfo);
         });
       }
     }
@@ -95,9 +94,10 @@ export class LoginComponent implements OnInit {
 
   }
 
-  private initiateEvent(id: number): void {
+  private initiateEvent(id: number, userInfo: any): void {
     console.log('id', id);
     localStorage.setItem('token', id.toString());
+    localStorage.setItem('userInfo', userInfo);
   }
 
   private setUpLoginForm(): void {

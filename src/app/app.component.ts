@@ -39,7 +39,11 @@ export class AppComponent {
     const getUserToken = localStorage.getItem('token');
     if (getUserToken) {
       this._authService.logUserStatus(true);
+
       // this._userService.setCurrentUserInfo(parseInt(getUserToken))
+
+      const userInfo = localStorage.getItem('userInfo');
+      console.log('userInfo', userInfo);
     }
   }
 
