@@ -9,11 +9,23 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  z-index: 10;
+
+  @media #{$mobile} {
+    width: 100%;
+    margin-top: 75px;
+  }
 
   .first-section {
     position: absolute;
     top: 8%;
     padding: 0 20px;
+
+    @media #{$mobile} {
+      left: 0;
+      top: 0;
+    }
+
   }
 
   .second-section {
@@ -21,10 +33,19 @@
     padding: 0 20px;
     position: absolute;
     bottom: 5%;
+
+    @media #{$mobile} {
+      bottom: 15%;
+    }
   }
 
   .logo {
     text-align: center;
+
+    @media #{$mobile} {
+      display: none ;
+    }
+
     img {
       width: 75%;
     }
@@ -33,12 +54,21 @@
   .menu-item {
     ul {
       margin-top: 20%;
+
+      @media #{$mobile} {
+        margin-top: 15%;
+      }
+
     }
 
     &__list {
       display: flex;
       justify-content: center;
       margin-bottom: 15px;
+
+      @media #{$mobile} {
+        margin-bottom: 0;
+      }
 
       &:last-child {
         margin-bottom: 0px;

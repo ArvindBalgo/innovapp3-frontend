@@ -19,11 +19,9 @@ export class MerchantsComponent implements OnInit {
   ngOnInit(): void {
     this._httpClient.get('/api/merchants').subscribe((response: any) => {
       this.merchants = response;
-      // console.log('this.merchants', this.merchants);
     });
 
-    this._httpClient.get(`${this.URL_BACKEND}api/merchant`).subscribe((response: any) => {
-      console.log(response.data, 'RESPONSE DATA');
+    this._httpClient.get(`${this.URL_BACKEND}api/merchants`).subscribe((response: any) => {
       response.data.forEach((project: any) => {
         this.list.push({
           id: project.id,
@@ -36,8 +34,6 @@ export class MerchantsComponent implements OnInit {
           contact_number: project.contact_number
         })
       })
-
-      console.log(this.list)
     })
 
   }

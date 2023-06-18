@@ -1,3 +1,50 @@
-<p>merchant-profile works!</p>
-<img *ngIf="imgUrl.length > 0" style="display: block; width: 140px" src='{{imgUrl}}' alt='MCB Reviews;'>
+<h2 class="mq-title-h2">
+  {{ merchantInfo.name }}
+</h2>
+
+<div class="merchant-container">
+  <div class="merchant-profile">
+    <ul>
+      <li class="merchant-profile-li">
+        <img src="./assets/images/merchant/Frame.png" alt=""/>
+      </li>
+      <li class="merchant-profile-li">
+        <img *ngIf="imgUrl.length > 0" style="display: block; width: 200px" src='{{imgUrl}}' alt='MCB Reviews;'>
+      </li>
+      <li>
+        <div class="merchant-info">
+          <h3>MERCHANT DETAILS:</h3>
+
+          <p><span>Name:</span> {{ merchantInfo.name }}</p>
+          <p><span>BRN:</span> {{ merchantInfo.brn }}</p>
+          <p><span>Contact number:</span> {{ merchantInfo.contact }}</p>
+          <p><span>Website:</span> {{ merchantInfo.link}}</p>
+          <p><span>Category:</span> {{ merchantInfo.category }}</p>
+
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="merchant-review">
+      <h4>
+        Client Reviews
+      </h4>
+
+    <div class="merchant-review-list">
+      <ul>
+
+        <li *ngFor="let review of merchantInfo.reviews">
+          <div class="review-header">
+              {{ review.customer }}
+              <app-ui-stars [rate]="review.rating"></app-ui-stars>
+          </div>
+          <p>{{ review.review }}</p>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
 
