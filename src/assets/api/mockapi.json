@@ -39,7 +39,8 @@
       "telephone": "57777777",
       "website": "https://www.flowers.com/",
       "profileImg": "./assets/images/messages/client-1.png",
-      "rating": "3"
+      "rating": "3",
+      "id": "6"
     },
     {
       "tag": "Florist",
@@ -48,7 +49,8 @@
       "telephone": "MRU",
       "website": "https://www.netflix.com/",
       "profileImg": "./assets/images/messages/client-2.png",
-      "rating": "3"
+      "rating": "3",
+      "id":  "7"
     },
 
     {
@@ -58,7 +60,8 @@
       "telephone": "MRU",
       "website": "https://www.bbc.co.uk/",
       "profileImg": "./assets/images/messages/client-3.png",
-      "rating": "4"
+      "rating": "4",
+      "id":  "8"
     },
 
     {
@@ -68,7 +71,8 @@
       "telephone": "MRU",
       "website": "https://www.amazon.com/",
       "profileImg": "./assets/images/messages/client-2.png",
-      "rating": "4.5"
+      "rating": "4.5",
+      "id":  "9"
     },
 
     {
@@ -78,7 +82,8 @@
       "telephone": "MRU",
       "website": "https://www.spotify.com/",
       "profileImg": "./assets/images/messages/client-3.png",
-      "rating": "3.8"
+      "rating": "3.8",
+      "id":  "10"
     },
 
     {
@@ -88,7 +93,8 @@
       "telephone": "MRU",
       "website": "https://www.reddit.com/",
       "profileImg": "./assets/images/messages/client-1.png",
-      "rating": "4.2"
+      "rating": "4.2",
+      "id":  "11"
     },
 
     {
@@ -98,7 +104,8 @@
       "telephone": "MRU",
       "website": "https://www.instagram.com/",
       "profileImg": "./assets/images/messages/client-3.png",
-      "rating": "4.7"
+      "rating": "4.7",
+      "id":  "12"
     },
 
     {
@@ -108,7 +115,8 @@
       "telephone": "MRU",
       "website": "https://www.airbnb.com/",
       "profileImg": "./assets/images/messages/client-2.png",
-      "rating": "4.3"
+      "rating": "4.3",
+      "id":  "13"
     },
 
     {
@@ -118,7 +126,8 @@
       "telephone": "MRU",
       "website": "https://www.pexels.com/",
       "profileImg": "./assets/images/messages/client-1.png",
-      "rating": "4.1"
+      "rating": "4.1",
+      "id":  "14"
     },
 
     {
@@ -128,7 +137,8 @@
       "telephone": "MRU",
       "website": "https://www.github.com/",
       "profileImg": "./assets/images/messages/client-1.png",
-      "rating": "3.9"
+      "rating": "3.9",
+      "id":  "15"
     },
 
     {
@@ -138,7 +148,8 @@
       "telephone": "MRU",
       "website": "MRU",
       "profileImg": "./assets/images/messages/client-1.png",
-      "rating": "4.4"
+      "rating": "4.4",
+      "id":  "16"
     },
 
     {
@@ -148,7 +159,8 @@
       "telephone": "MRU",
       "website": "MRU",
       "profileImg": "./assets/images/messages/client-1.png",
-      "rating": "4.6"
+      "rating": "4.6",
+      "id":  "17"
     },
 
     {
@@ -158,7 +170,8 @@
       "telephone": "MRU",
       "website": "MRU",
       "profileImg": "./assets/images/messages/client-1.png",
-      "rating": "4.2"
+      "rating": "4.2",
+      "id":  "6"
     },
 
     {
@@ -168,7 +181,8 @@
       "telephone": "MRU",
       "website": "MRU",
       "profileImg": "./assets/images/messages/client-1.png",
-      "rating": "4.3"
+      "rating": "4.3",
+      "id":  "6"
     },
 
     {
@@ -178,7 +192,8 @@
       "telephone": "MRU",
       "website": "MRU",
       "profileImg": "./assets/images/messages/client-1.png",
-      "rating": "4.0"
+      "rating": "4.0",
+      "id":  "6"
     },
 
     {
@@ -188,7 +203,8 @@
       "telephone": "MRU",
       "website": "MRU",
       "profileImg": "./assets/images/messages/client-1.png",
-      "rating": "3.8"
+      "rating": "3.8",
+      "id":  "6"
     },
 
     {
@@ -198,7 +214,8 @@
       "telephone": "MRU",
       "website": "MRU",
       "profileImg": "./assets/images/messages/client-1.png",
-      "rating": "4.5"
+      "rating": "4.5",
+      "id":  "6"
     },
 
     {
@@ -208,7 +225,8 @@
       "telephone": "MRU",
       "website": "MRU",
       "profileImg": "./assets/images/messages/client-1.png",
-      "rating": "3.7"
+      "rating": "3.7",
+      "id":  "6"
     },
 
     {
@@ -218,7 +236,8 @@
       "telephone": "MRU",
       "website": "MRU",
       "profileImg": "./assets/images/messages/client-1.png",
-      "rating": "4.1"
+      "rating": "4.1",
+      "id":  "6"
     },
 
     {
@@ -228,7 +247,8 @@
       "telephone": "MRU",
       "website": "MRU",
       "profileImg": "./assets/images/messages/client-1.png",
-      "rating": "3.9"
+      "rating": "3.9",
+      "id":  "6"
     },
 
     {
@@ -238,7 +258,8 @@
       "telephone": "MRU",
       "website": "MRU",
       "profileImg": "./assets/images/messages/client-1.png",
-      "rating": "4.3"
+      "rating": "4.3",
+      "id":  "6"
     }
   ],
   "projects": [

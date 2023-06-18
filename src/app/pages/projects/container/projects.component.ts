@@ -19,8 +19,11 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
 
+    const getUserToken = localStorage.getItem('token');
+
+    console.log('getUserToken', getUserToken);
+
     this._httpClient.get(`${this.URL_BACKEND}api/quotes`).subscribe((response: any) => {
-      console.log('response', response);
       response.data.forEach((project: any) => {
         this.list.push({
           descriptions: project.title,
@@ -47,7 +50,6 @@ export class ProjectsComponent implements OnInit {
   }
 
   public goToProjectDetails() {
-    console.log('go to page');
     this._router.navigate(['/projects/'+55+'/project-detail']);
   }
 
