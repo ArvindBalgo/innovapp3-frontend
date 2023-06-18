@@ -17,7 +17,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "https://arvindbalgo.github.io/innovapp3-frontend/",
             "outputPath": "dist/innovapp3-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
