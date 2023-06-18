@@ -1,10 +1,11 @@
-<div *ngIf="userDetails.userType === 'Client' && isUserLoggedIn">
+<div *ngIf="userDetails?.userType && userDetails.userType === 'Client' && isUserLoggedIn">
   <app-nav-bar></app-nav-bar>
 </div>
 <div *ngIf="userDetails.userType === 'Merchant' && isUserLoggedIn">
   <app-nav-bar-merchant></app-nav-bar-merchant>
 </div>
 <div [ngClass]="{ wrapper: isUserLoggedIn, wrapperLogin: !isUserLoggedIn }">
+
   <app-header></app-header>
   <div class="inner-wrapper">
     <router-outlet></router-outlet>

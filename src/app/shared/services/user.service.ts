@@ -14,16 +14,11 @@ export class UserService {
     this._loggedUserData$ = new BehaviorSubject<UserModel>(this._loggedUserData);
   }
 
-  public setCurrentUserInfo(userId: number): void {
-    this._httpClient.get('/api/signupUsers').subscribe((response:  any) => {
-      const userInfo = response.find((user: UserModel) => {
-        return user.id === userId;
-      });
-      this._loggedUserData$.next(userInfo);
-    });
+  public setCurrentUserInfo(userInfo: any): void {
+    this._loggedUserData$.next(userInfo);
   }
 
-  public currentUserInfo(): Observable<UserModel> {
+  public currentUserInfo(): Observable<any> {
     return this._loggedUserData$.asObservable();
   }
 
