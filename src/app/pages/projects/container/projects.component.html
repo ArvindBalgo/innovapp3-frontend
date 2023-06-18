@@ -24,7 +24,7 @@
           <li>{{ project.descriptions ? project.descriptions : 'wedding plan' }}</li>
           <li>{{ project.deadline ? project.deadline : '2023-06-18' }}</li>
           <li>{{ project.budget ? project.budget : '50000' }}</li>
-          <li><span class="bidders" style="margin-left: 1px"> {{ project.bidders ? project.bidders : '5' }}</span></li>
+          <li><span class="bidders" style="margin-left: 1px">{{randomBids()}}</span></li>
           <li ngClass="{{'status-' + project.status}}"><span class="status">{{ getStatus(project.status) }} {{project.status}}</span></li>
           <li class="button-container">
             <button>
