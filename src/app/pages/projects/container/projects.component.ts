@@ -23,7 +23,7 @@ export class ProjectsComponent implements OnInit {
 
     console.log('getUserToken', getUserToken);
 
-    this._httpClient.get(`${this.URL_BACKEND}api/quotes`).subscribe((response: any) => {
+    this._httpClient.get(`${this.URL_BACKEND}api/quotes/my-project/${getUserToken}`).subscribe((response: any) => {
       response.data.forEach((project: any) => {
         this.list.push({
           descriptions: project.title,
