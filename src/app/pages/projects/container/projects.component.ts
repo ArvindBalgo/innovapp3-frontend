@@ -21,15 +21,15 @@ export class ProjectsComponent implements OnInit {
 
     const getUserToken = localStorage.getItem('token');
 
-    console.log('getUserToken', getUserToken);
-
     this._httpClient.get(`${this.URL_BACKEND}api/quotes/my-project/${getUserToken}`).subscribe((response: any) => {
       response.data.forEach((project: any) => {
+        console.log(project)
         this.list.push({
           descriptions: project.title,
           deadline: project.deadline,
           budget: project.budjet,
           bidders: project.bidders,
+          eligibility: project.eligibility,
           status: 1
         })
       })

@@ -4,7 +4,7 @@
 
 <!--    dropdown here-->
   </div>
-
+  <div style="padding: 15px !important;" *ngIf="list?.length > 0" [innerHTML]="list[0]['eligibility']"> </div>
   <div class="project-titles">
     <ul class="list-item">
       <li>Project Description</li>
@@ -17,6 +17,7 @@
   </div>
 
   <div class="project-items">
+
     <ul class="project-items__ul">
       <li *ngFor="let project of list" class="project-items__list">
 
