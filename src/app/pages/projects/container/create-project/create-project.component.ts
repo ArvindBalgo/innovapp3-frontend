@@ -65,8 +65,6 @@ export class CreateProjectComponent implements OnInit {
 
   onRequestQuote() {
 
-    console.log('this.createForm.value', this.createForm.value);
-    console.log(this.projectList.filter(item => item.checked));
     const filteredList = this.projectList.filter(item => item.checked).map(item => `<ai-info>${item.label}</ai-info>`);
     const specificDescription = this.createForm.value.description;
     const payload = {
@@ -86,11 +84,10 @@ export class CreateProjectComponent implements OnInit {
     fm.append('is_ai', '1')
     fm.append('deadline', '22/02/2024');
     fm.append('title', this.createForm.value.title);
-    console.log(this.createForm.value)
 
 
     this._httpClient.post(`${this.URL_BACKEND}api/quotes`, fm).subscribe(info => {
-      console.log(info)
+      // console.log(info)
     })
   }
 

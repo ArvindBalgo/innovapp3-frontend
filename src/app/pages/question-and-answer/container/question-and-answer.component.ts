@@ -17,7 +17,7 @@ export class QuestionAndAnswerComponent implements OnInit {
     },
     {
       initiator: 'AI',
-      Message: 'Port Louis is the capital of Mauritius?',
+      Message: 'Port Louis is the capital of Mauritius',
       date: new Date()
     },
     {
@@ -43,7 +43,7 @@ export class QuestionAndAnswerComponent implements OnInit {
   submitQuestion() {
     // const textValue = event.target.value;
     this._httpClient.post('https://mauriquotes-ai.herokuapp.com/ai/chat' , {query: 'kuma mo apeller'} ).subscribe((response: any) => {
-      console.log('response', response);
+
     });
   }
 

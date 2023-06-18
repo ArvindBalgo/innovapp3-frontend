@@ -19,7 +19,7 @@ export class ChatComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     setTimeout(() => {
-      console.log('chat', this.chat);
+
     }, 500)
 
   }

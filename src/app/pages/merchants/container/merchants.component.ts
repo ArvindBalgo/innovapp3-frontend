@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-merchants',
@@ -13,7 +14,8 @@ export class MerchantsComponent implements OnInit {
 
 
   constructor(
-    private _httpClient: HttpClient
+    private _httpClient: HttpClient,
+    private _router: Router
   ) { }
 
   ngOnInit(): void {
@@ -36,6 +38,10 @@ export class MerchantsComponent implements OnInit {
       })
     })
 
+  }
+
+  goToMerchant(merchantId: any) {
+    this._router.navigate(['/merchants/profile']);
   }
 
 }

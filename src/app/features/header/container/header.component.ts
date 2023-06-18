@@ -53,7 +53,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
       )
       .subscribe((userInfo: UserModel) => {
       this.userDetails = userInfo;
-      console.log('this.userDetails', this.userDetails);
     })
   }
 
