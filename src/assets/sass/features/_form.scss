@@ -6,11 +6,18 @@
   box-shadow: $primary-box-shadow;
   padding: 25px 50px;
 
+  @media #{$mobile} {
+    height: 100vh;
+    max-width: 100%;
+  }
+
 .log{
   display: flex;
   justify-content: center;
-  padding-bottom: 20px;
-
+  width: 250px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
   &__title {
     font-family: $font-primary-bold !important;
@@ -29,7 +36,6 @@
 
   &__cta {
     text-align: center;
-    margin-top: 20px; /* Add some space above the button */
   }
 
 
@@ -54,7 +60,7 @@
       ;
  }
 .text{  width: 296px;
-  height: 55px;
+  padding-bottom: 10px;
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 700;
@@ -65,7 +71,9 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    color: #bc0303;}
+    color: #898989;
+    padding-bottom: 45px;
+  }
 
 
 
@@ -76,7 +84,7 @@
 
   /* Center the form submit button */
   button {
-    width: 400px;
+    width: 250px;
     height: 48px;
     background: #2E3243;
     border-radius: 4px;
@@ -84,6 +92,7 @@
     margin-top: 20px; /* Add some space above the button */
   }
   .inputs {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;

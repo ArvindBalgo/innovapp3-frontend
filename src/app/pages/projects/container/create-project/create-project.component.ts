@@ -9,6 +9,8 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 })
 export class CreateProjectComponent implements OnInit {
 
+  public isLoading = false;
+
   public createForm: FormGroup;
   public projectList:  Array<{index: number;label: string; checked: boolean}> = [];
   private URL_BACKEND = 'https://mauriquotes-backend.herokuapp.com/';
@@ -29,7 +31,11 @@ export class CreateProjectComponent implements OnInit {
 
   getItems(event: any) {
     const textValue = event.target.value;
+    this.isLoading = true;
     this._httpClient.post('https://mauriquotes-ai.herokuapp.com/ai/task-list' , {query: textValue} ).subscribe((response: any) => {
+      if (response) {
+        this.isLoading = false;
+      }
       response.forEach((task: string, index: number) => {
         this.projectList.push({
           index,
@@ -55,7 +61,6 @@ export class CreateProjectComponent implements OnInit {
   clearDescription() {
     this.createForm.get('description')?.setValue('');
     this.projectList = [];
-
   }
 
   onRequestQuote() {
@@ -87,7 +92,6 @@ export class CreateProjectComponent implements OnInit {
     this._httpClient.post(`${this.URL_BACKEND}api/quotes`, fm).subscribe(info => {
       console.log(info)
     })
-    console.log(payload)
   }
 
   toggleProject(project: {label: string; checked: boolean, index: number}) {

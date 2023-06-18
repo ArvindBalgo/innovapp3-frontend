@@ -55,15 +55,20 @@
             <div class="input-item-response-inner">
               <div>
                 <ul>
-                    <li *ngFor="let project of projectList;">
-                      <mat-checkbox [checked]="project.checked" (change)="toggleProject(project)">{{ project.label }}</mat-checkbox>
-                    </li>
+                  <li *ngFor="let project of projectList;">
+                    <mat-checkbox [checked]="project.checked" (change)="toggleProject(project)">{{ project.label }}</mat-checkbox>
+                  </li>
 
                 </ul>
               </div>
             </div>
 
+            <div class="loader-container" *ngIf="isLoading">
+              <span class="loader"></span>
+            </div>
+
           </div>
+
           <div class="input-item">
 
             <div class="input-item-wrapper input-item-wrapper--fluid">

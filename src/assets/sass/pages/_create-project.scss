@@ -132,6 +132,7 @@
       }
 
       .input-item-response {
+          position: relative;
           margin-bottom: 50px;
           border: 1px solid #000000;
           padding: 40px 25px 25px 25px;
@@ -145,6 +146,18 @@
         .input-item-response-inner {
             padding: 0 10px 0 10px;
         }
+      }
+
+      .loader-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#ffffff, 0.8);
       }
 
     }

@@ -1,0 +1,96 @@
+.merchant-container {
+
+    .merchant-profile {
+      ul {
+        display: flex;
+        gap: 30px;
+        @media #{$mobile} {
+          flex-direction: column;
+        }
+
+        li {
+          width: 33.3%;
+          padding: 30px;
+          border: 1px solid #dcdcdc;
+
+          @media #{$mobile} {
+            width: 100%;
+          }
+
+          &:first-child {
+            img {
+              width: 50%;
+            }
+          }
+        }
+
+        .merchant-profile-li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .merchant-info {
+            h3 {
+              font-size: 24px;
+              padding-bottom: 24px;
+            }
+
+            p {
+              span {
+                color: #D6254F;
+              }
+            }
+        }
+      }
+    }
+
+    .merchant-review {
+      h4 {
+        font-size: 24px;
+        margin: 40px 0;
+      }
+
+      .merchant-review-list {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+
+          li {
+            border: 1px solid #dcdcdc;
+            width: 48%;
+            margin-right: 2%;
+            margin-left: 2%;
+            margin-bottom: 3%;
+            padding: 20px;
+
+            &:nth-child(1n + 0) {
+              margin-left: 0;
+            }
+
+            &:nth-child(2n + 0) {
+              margin-right: 0;
+              margin-left: 2%;
+            }
+
+            @media #{$mobile} {
+              width: 100%;
+              margin-right: 0;
+              margin-left: 0;
+            }
+
+
+            .review-header {
+              padding-bottom: 20px !important;
+              margin-bottom: 20px !important;
+              border-bottom: 1px solid #dcdcdc;
+              display: flex;
+              justify-content: space-between;
+            }
+
+          }
+        }
+      }
+    }
+
+}

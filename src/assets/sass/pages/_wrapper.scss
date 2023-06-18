@@ -3,9 +3,15 @@
   margin: 0 auto;
   margin-top: 50px;
 
-  //@media #{$mobile} {
-  //  max-width: 100% !important;
-  //}
+  @media #{$mobile} {
+    max-width: 100% !important;
+    margin-top: 0px;
+  }
+
+  .input-wrapper {
+    width: 90%;
+    margin-bottom: 10px;
+  }
 }
 
 .wrapper {
