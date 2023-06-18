@@ -42,8 +42,6 @@ export class LoginComponent implements OnInit {
 
       if (this.loginForm.value.userName.includes('merchant')) {
         this._httpClient.post(`${this.URL_BACKEND}/auth/merchant` , fm ).subscribe((response: any) => {
-          console.log('response', response);
-          console.log('response', response.data.id);
           this._router.navigate(['projects']);
 
 

@@ -15,7 +15,6 @@ export class UserService {
   }
 
   public setCurrentUserInfo(userInfo: any): void {
-    console.log(userInfo, '--------------')
     this._loggedUserData$.next(userInfo);
   }
 

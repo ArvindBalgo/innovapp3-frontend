@@ -15,8 +15,8 @@ export class ProjectDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
-      console.log(params) //log the entire params object
-      console.log(params['id']) //log the value of id
+      // console.log(params) //log the entire params object
+      // console.log(params['id']) //log the value of id
     });
   }
 

@@ -17,7 +17,7 @@ export class QuestionAndAnswerComponent implements OnInit {
     },
     {
       initiator: 'AI',
-      Message: 'Port Louis is the capital of Mauritius?',
+      Message: 'Port Louis is the capital of Mauritius',
       date: new Date()
     },
     {

@@ -36,21 +36,20 @@ export class AppComponent {
   }
 
   private checkUserLoginStatus(): void {
-    const getUserToken = localStorage.getItem('token');
+    const getUserToken =
+      localStorage.getItem('token');
     if (getUserToken) {
       this._authService.logUserStatus(true);
 
       const userInfo:any = localStorage.getItem('userInfo');
 
       this._userService.setCurrentUserInfo(JSON.parse(userInfo))
-      console.log('userInfo -----', userInfo);
     }
   }
 
   private getUserInfo(): void {
     this._userService.currentUserInfo()
       .subscribe((userInfo: any) => {
-        console.log('userInfo', userInfo);
       this.userDetails = userInfo;
     })
   }

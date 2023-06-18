@@ -24,7 +24,7 @@
                  <p class="website">Website: {{merchant.website}}</p>
             </div>
 
-            <div class="merchant-cta">
+            <div class="merchant-cta" (click)="goToMerchant(merchant.id)">
                 <button>
                   Show More +
                 </button>
