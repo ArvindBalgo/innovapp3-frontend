@@ -95,9 +95,8 @@ export class LoginComponent implements OnInit {
   }
 
   private initiateEvent(id: number, userInfo: any): void {
-    console.log('id', id);
     localStorage.setItem('token', id.toString());
-    localStorage.setItem('userInfo', userInfo);
+    localStorage.setItem('userInfo', JSON.stringify(userInfo));
   }
 
   private setUpLoginForm(): void {

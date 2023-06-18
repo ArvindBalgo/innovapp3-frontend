@@ -40,10 +40,10 @@ export class AppComponent {
     if (getUserToken) {
       this._authService.logUserStatus(true);
 
-      // this._userService.setCurrentUserInfo(parseInt(getUserToken))
+      const userInfo:any = localStorage.getItem('userInfo');
 
-      const userInfo = localStorage.getItem('userInfo');
-      console.log('userInfo', userInfo);
+      this._userService.setCurrentUserInfo(JSON.parse(userInfo))
+      console.log('userInfo -----', userInfo);
     }
   }
 
